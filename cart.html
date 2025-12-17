@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - MarkDentApp</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color: #fcfcfc;">
+
+    <!-- Header -->
+    <div class="cart-header d-flex align-items-center p-3 mb-3">
+        <a href="speaker-profile.html" class="text-dark me-3 text-decoration-none fs-5"><i
+                class="fas fa-chevron-left"></i></a>
+        <h5 class="fw-bold mb-0">My Cart</h5>
+    </div>
+
+    <div class="container pb-5 mb-5" style="padding-bottom: 140px !important;">
+
+        <!-- Cart Item 1 -->
+        <div class="cart-item mb-3">
+            <img src="https://via.placeholder.com/60" class="cart-item-img" alt="Product">
+            <div class="flex-grow-1">
+                <h6 class="fw-bold mb-1" style="font-size: 14px;">Synchronize Fest 2024</h6>
+                <div class="fw-bold text-primary">$60.00</div>
+            </div>
+            <button class="btn-delete">
+                <i class="far fa-trash-alt"></i>
+            </button>
+        </div>
+
+        <!-- Cart Item 2 -->
+        <div class="cart-item mb-4">
+            <img src="https://via.placeholder.com/60" class="cart-item-img" alt="Product">
+            <div class="flex-grow-1">
+                <h6 class="fw-bold mb-1" style="font-size: 14px;">Synchronize Fest 2024</h6>
+                <div class="fw-bold text-primary">$60.00</div>
+            </div>
+            <button class="btn-delete">
+                <i class="far fa-trash-alt"></i>
+            </button>
+        </div>
+
+        <!-- Security Banner -->
+        <div class="security-banner mb-4">
+            <i class="far fa-question-circle me-3 fs-5"></i>
+            <div class="small fw-medium" style="font-size: 12px; line-height: 1.4;">All Payment Methods are
+                totally<br>Secured and Trusted</div>
+        </div>
+
+        <!-- Discount Code -->
+        <h6 class="fw-bold mb-2" style="font-size: 14px;">Discount Code</h6>
+        <div class="d-flex gap-2 mb-4">
+            <input type="text" class="form-control form-control-lg fs-6 shadow-none"
+                placeholder="Type in Discount Code..."
+                style="background: #fcfcfc; border: 1px solid #f2f4f7; border-radius: 12px;">
+            <button class="btn btn-outline-primary px-4 rounded-3 fw-bold" style="border-radius: 12px !important;">
+                <i class="fas fa-check me-1"></i> Apply
+            </button>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="summary-card p-3">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="fw-bold text-dark" style="font-size: 14px;">Subtotal</span>
+                <span class="fw-bold text-primary" style="font-size: 14px;">950 EGP</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+                <span class="fw-bold text-dark" style="font-size: 14px;">Discount Code</span>
+                <span class="fw-bold text-primary" style="font-size: 14px;">-0.00 EGP</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span class="fw-bold text-dark" style="font-size: 14px;">Service & Transaction Fees(%)</span>
+                <span class="fw-bold text-primary" style="font-size: 14px;">+50.0 EGP</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="cart-footer">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="fw-bold mb-0">Total</h5>
+            <h5 class="fw-bold text-primary mb-0">1000. EGP</h5>
+        </div>
+        <button class="btn btn-primary w-100 py-3 rounded-3 fw-bold">
+            <i class="fas fa-wallet me-2"></i> Proceed to full Payment
+        </button>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

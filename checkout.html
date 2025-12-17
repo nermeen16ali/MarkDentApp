@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MarkDentApp</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color: #fcfcfc;">
+
+    <!-- Header -->
+    <div class="checkout-header d-flex align-items-center p-3 mb-3">
+        <a href="cart.html" class="text-dark me-3 text-decoration-none fs-5"><i class="fas fa-chevron-left"></i></a>
+        <h5 class="fw-bold mb-0">Checkout</h5>
+    </div>
+
+    <div class="container pb-5 mb-5" style="padding-bottom: 140px !important;">
+
+        <h6 class="fw-bold mb-3" style="font-size: 15px;">Choose Payment Method</h6>
+
+        <!-- Payment Option: Credit Card -->
+        <label class="payment-option-card mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="payment-icon bg-white">
+                    <i class="fas fa-credit-card text-warning fs-5"></i>
+                </div>
+                <span class="fw-medium text-dark">Credit Card</span>
+            </div>
+            <input type="radio" name="paymentMethod" class="form-check-input custom-radio" checked>
+        </label>
+
+        <!-- Payment Option: Apple Pay -->
+        <label class="payment-option-card mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="payment-icon bg-white">
+                    <i class="fab fa-apple fs-5"></i>
+                </div>
+                <span class="fw-medium text-dark">Apple Pay</span>
+            </div>
+            <input type="radio" name="paymentMethod" class="form-check-input custom-radio">
+        </label>
+
+        <!-- Payment Option: Fawry -->
+        <label class="payment-option-card mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="payment-icon bg-warning text-white">
+                    <i class="fas fa-bolt fs-5"></i>
+                </div>
+                <span class="fw-medium text-dark">Fawry</span>
+            </div>
+            <input type="radio" name="paymentMethod" class="form-check-input custom-radio">
+        </label>
+
+        <!-- Payment Option: Amaan -->
+        <label class="payment-option-card mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="payment-icon" style="background-color: #00bfa5; color: white;">
+                    <span class="fw-bold small">أمان</span>
+                </div>
+                <span class="fw-medium text-dark">Amaan</span>
+            </div>
+            <input type="radio" name="paymentMethod" class="form-check-input custom-radio">
+        </label>
+
+        <!-- Payment Option: Mobile wallet -->
+        <label class="payment-option-card mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="payment-icon bg-white border">
+                    <i class="fas fa-mobile-alt text-danger fs-5"></i>
+                </div>
+                <span class="fw-medium text-dark">Mobile wallet</span>
+            </div>
+            <input type="radio" name="paymentMethod" class="form-check-input custom-radio">
+        </label>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="cart-footer">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="fw-bold mb-0">Total</h5>
+            <h5 class="fw-bold text-primary mb-0">1000. EGP</h5>
+        </div>
+        <button class="btn btn-primary w-100 py-3 rounded-3 fw-bold">
+            <i class="far fa-check-circle me-2"></i> Proceed to Checkout
+        </button>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
