@@ -9,6 +9,7 @@
     --dark-700: #7A7A90;
     --dark-200: #E0E0E6;
     --primary-100: #E9EAF0;
+    --primary-900: #3B457B;
 
     --bg-color: #FAFAFA;
     --input-bg: #ffffff;
@@ -41,7 +42,6 @@ ul {
 
 body {
     font-family: var(--main-font);
-    color: var(--dark-900);
     font-size: 14px;
     background-color: var(--bg-color);
     -webkit-font-smoothing: antialiased;
@@ -56,9 +56,11 @@ h5,
 h6 {
     color: var(--dark-900);
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .mb-6 {
     margin-bottom: 6px;
 }
@@ -70,24 +72,31 @@ a{
 .mb-36 {
     margin-bottom: 36px;
 }
-.mb-124{
+
+.mb-124 {
     margin-bottom: 124px;
 }
+
 .heading-1 {
     font-size: 30px;
     font-weight: 800;
     line-height: 40px;
 }
-.container{
+
+.container {
     padding-inline: 16px;
 }
-.main-color {
+
+.main-color,
+.iti__country-name {
     color: var(--dark-900);
-    /* line-height: 21px; */
 }
-.text-dark-700{
+
+.text-dark-700,
+.iti__dial-code {
     color: var(--dark-700)
 }
+
 .colored {
     color: var(--custom-primary);
 }
@@ -99,33 +108,75 @@ a{
     color: var(--dark-900);
     background: var(--white-950)
 }
-.form-control::placeholder{
+
+.form-control::placeholder {
     color: var(--dark-900);
 }
-.form-control:focus, .form-check-input:focus{
+
+.form-control:focus,
+.form-check-input:focus,
+.custom-input-group:focus-within,
+.iti__search-input:focus-visible {
     box-shadow: none;
+    background-color: transparent;
+    border-color: var(--primary-900);
+    outline: none;
 }
-.form-check .form-check-input{
+
+.form-check .form-check-input {
     height: 16px;
     width: 16px;
     border: 1.5px solid #E0E0E6;
     border-radius: 5px;
 }
+
 .form-check-input:checked {
     background-color: #0D0C27;
     border-color: #0D0C27;
 }
-.iti__selected-country{
+
+.iti {
+    width: 100%;
+}
+
+.iti .iti__selected-dial-code {
+    color: var(--dark-900);
+    margin-left: 2px;
+}
+
+.iti__tel-input {
+    padding-left: 105px !important;
+}
+
+.iti__selected-country {
     border-right: 1px solid var(--primary-100);
     padding-right: 13px;
 }
-/* .text-primary {
-    color: var(--custom-primary) !important;
+
+.iti__selected-country-primary {
+    flex-direction: row-reverse;
+    gap: 4px;
 }
 
-.text-muted {
-    color: var(--dark-700) !important;
-} */
+.iti__arrow {
+    margin-left: var(--iti-arrow-padding);
+    width: 9px;
+    height: 5px;
+    border: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='5' viewBox='0 0 9 5' fill='none'%3E%3Cpath d='M0.902478 0.203524C0.983737 0.311106 1.22634 0.632269 1.37083 0.817409C1.66021 1.18822 2.05562 1.68094 2.48215 2.17221C2.91085 2.66595 3.36119 3.14681 3.76126 3.50031C3.96187 3.67756 4.1381 3.81225 4.28352 3.89992C4.42028 3.98237 4.50107 3.99951 4.50107 3.99951C4.50107 3.99951 4.57949 3.98236 4.71625 3.89992C4.86167 3.81225 5.03789 3.67757 5.2385 3.50031C5.63858 3.14682 6.08892 2.66595 6.51761 2.1722C6.94415 1.68093 7.33955 1.1882 7.62894 0.817388C7.77342 0.632246 8.01569 0.311537 8.09695 0.203953C8.2607 -0.0183953 8.57404 -0.0663527 8.79639 0.0974028C9.01874 0.261158 9.06624 0.574157 8.90248 0.796505L8.9013 0.798062C8.81618 0.910767 8.56477 1.24363 8.41729 1.43262C8.12137 1.8118 7.71441 2.31907 7.27271 2.82781C6.83316 3.33406 6.34938 3.85319 5.90064 4.2497C5.67684 4.44744 5.44998 4.62525 5.23253 4.75634C5.02882 4.87915 4.77089 5 4.49988 5C4.22887 5 3.97095 4.87914 3.76723 4.75633C3.54979 4.62525 3.32293 4.44744 3.09913 4.24969C2.65038 3.85319 2.1666 3.33406 1.72705 2.82782C1.28535 2.31909 0.878398 1.81182 0.58248 1.43264C0.434943 1.24359 0.183627 0.910858 0.0985977 0.798282L0.0975203 0.796855C-0.066236 0.574508 -0.0189723 0.261191 0.203375 0.097435C0.425716 -0.0663161 0.738718 -0.0188054 0.902478 0.203524Z' fill='%23161616'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.iti__arrow--up {
+    transform: rotate(180deg);
+}
+
+.iti__search-input {
+    height: 32px;
+    padding-left: 12px;
+}
 
 /* Buttons */
 .btn-primary {
@@ -136,13 +187,6 @@ a{
     font-weight: 700;
     font-size: 16px;
 }
-
-/* .btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-    background-color: var(--primary-hover);
-    border-color: var(--primary-hover);
-} */
 
 .btn-outline-primary {
     color: var(--custom-primary);
@@ -212,61 +256,20 @@ a{
 
 .icon-primary {
     background-color: #243c7c;
-    /* Dark Blue from image */
     color: white;
 }
-
-/* Layout Helpers */
-/* .auth-container {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 20px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .auth-footer {
-    margin-top: auto;
-    text-align: center;
-    font-size: 14px;
-    color: var(--dark-700);
-    padding-bottom: 20px;
-} */
 
 /* Custom Input Group */
 .custom-input-group {
     display: flex;
     align-items: center;
-    border: 1px solid #475467;
-    /* Darker border as per image */
-    border-radius: var(--radius-lg);
-    /* Larger radius */
-    padding: 4px 16px;
-    background-color: var(--input-bg);
-    transition: all 0.2s;
-    height: 56px;
-}
-
-.custom-input-group:focus-within {
-    border-color: var(--custom-primary);
-    box-shadow: 0 0 0 4px rgba(0, 144, 231, 0.1);
+    border: 1px solid #E0E0E6;
+    padding-inline: 16px 14px;
+    border-radius: var(--radius-md);
 }
 
 .custom-input-group .form-control {
     border: none;
-    padding: 0 12px;
-    box-shadow: none;
-    font-size: 24px;
-    /* Larger dots for password */
-    letter-spacing: 2px;
-    height: 100%;
-}
-
-.custom-input-group .form-control::placeholder {
-    font-size: 16px;
-    /* Normal size for placeholder text */
-    letter-spacing: normal;
 }
 
 .custom-input-group .input-icon {
@@ -274,15 +277,12 @@ a{
 }
 
 .custom-input-group .fa-lock {
-    color: #344054;
-    /* Dark icon color */
+    color: var(--primary-900);
 }
 
 .custom-input-group .fa-eye,
 .custom-input-group .fa-eye-slash {
-    color: #98a2b3;
-    /* Light/Muted icon color */
-    cursor: pointer;
+    color: #C7C7D1;
 }
 
 /* Auth Form Controls (Single Inputs/Selects) */

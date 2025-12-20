@@ -1,99 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up - MarkDentApp</title>
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- Intl Tel Input CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/css/intlTelInput.css"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- Header -->
-      <div class="auth-header mb-36">
-        <h1 class="heading-1 mb-12">Create new<br />account</h1>
-        <p class="main-color">
-          Already have an account?
-          <a href="signin.html" class="colored">Sign In</a>
-        </p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dental Trauma Management - Evidence-based Practice">
+  <title>Sign Up - MarkDent</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.jpg" />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Intl Tel Input CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/css/intlTelInput.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-      <!-- Form -->
-      <form>
-        <p class="main-color mb-36">
-          Registration using a phone number for <strong>WhatsApp</strong> is
-          required.
-        </p>
-
-        <label class="mb-6 main-color"
-          ><strong>Your Phone</strong> (WhatsApp Number)</label
-        >
-        <div class="mb-12">
-          <input
-            type="tel"
-            id="phone"
-            class="form-control"
-            placeholder="012345678912"
-          />
-        </div>
-
-        <div class="mb-4 form-check">
-          <input type="checkbox" class="form-check-input" id="rememberMe" />
-          <label class="form-check-label main-color" for="rememberMe"
-            >Remember me</label
-          >
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block mb-124">
-          Sign Up
-        </button>
-      </form>
-
-      <!-- Footer -->
-      <p class="text-center text-dark-700">
-        By clicking "Sign Up" you agree to Recognize
-        <a href="#" class="colored">Term of Use</a> and <a href="#" class="colored">Privacy Policy</a>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="auth-header mb-36">
+      <h1 class="heading-1 mb-12">Create new<br />account</h1>
+      <p class="main-color">
+        Already have an account?
+        <a href="signin.html" class="colored fw-bold">Sign In</a>
       </p>
     </div>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Intl Tel Input JS -->
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/intlTelInput.min.js"></script>
-    <!-- Custom JS -->
-    <script src="assets/js/main.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Initialize Intl Tel Input
-        const inputOptions = {
-          initialCountry: "eg",
-          preferredCountries: ["sa", "eg", "ae", "kw", "qa", "bh", "om"],
-          separateDialCode: true,
-          utilsScript:
-            "https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/utils.js",
-        };
+    <!-- Form -->
+    <form>
+      <p class="main-color mb-36">
+        Registration using a phone number for <strong>WhatsApp</strong> is
+        required.
+      </p>
 
-        const phone = document.querySelector("#phone");
-        if (phone) {
-          window.intlTelInput(phone, inputOptions);
-        }
-      });
-    </script>
-  </body>
+      <label class="mb-6 main-color"><strong>Your Phone</strong> (WhatsApp Number)</label>
+      <div class="mb-12">
+        <input type="tel" id="phone" class="form-control" placeholder="012345678912" />
+      </div>
+
+      <div class="mb-4 form-check">
+        <input type="checkbox" class="form-check-input" id="rememberMe" />
+        <label class="form-check-label main-color" for="rememberMe">Remember me</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block mb-124">
+        Sign Up
+      </button>
+    </form>
+
+    <!-- Footer -->
+    <p class="text-center text-dark-700">
+      By clicking "Sign Up" you agree to Recognize
+      <a href="#" class="colored">Term of Use</a> and <a href="#" class="colored">Privacy Policy</a>
+    </p>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Intl Tel Input JS -->
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/intlTelInput.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize Intl Tel Input
+      const inputOptions = {
+        initialCountry: "eg",
+        preferredCountries: ["sa", "eg", "ae", "kw", "qa", "bh", "om"],
+        separateDialCode: true,
+        utilsScript:
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/utils.js",
+      };
+
+      const phone = document.querySelector("#phone");
+      if (phone) {
+        window.intlTelInput(phone, inputOptions);
+      }
+    });
+  </script>
+</body>
+
 </html>
