@@ -139,6 +139,7 @@ button {
 .heading-5 {
     font-size: 18px;
     font-weight: 700;
+    line-height: 27px;
 }
 
 .container {
@@ -839,7 +840,7 @@ select.auth-form-control {
 
 .ticket-left {
     flex: 1;
-    padding: 16px 0 16px 13px;
+    padding: 24px 0 27px 13px;
     border: 1px solid var(--primary-100);
     border-right: none;
     border-radius: 10px 0 0 10px;
@@ -898,6 +899,7 @@ select.auth-form-control {
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 21px;
     flex-grow: 1;
     display: -webkit-box;
     -webkit-line-clamp: 2;
