@@ -1898,7 +1898,8 @@ select.auth-form-control {
 }
 
 .ticket-selection-card:has(input:checked) .card-currency-text,
-.ticket-selection-card:has(input:checked) .card-date-text {
+.ticket-selection-card:has(input:checked) .card-date-text,
+.ticket-selection-card:has(input:checked) .ticket-icon-circle+span {
     color: var(--primary-50);
 }
 
@@ -1912,6 +1913,11 @@ select.auth-form-control {
     align-items: center;
     justify-content: center;
     margin-inline-end: 6px;
+}
+
+.ticket-icon-circle+span {
+    font-size: 16px;
+    color: var(--gray-scale-900)
 }
 
 .custom-radio-circle {
