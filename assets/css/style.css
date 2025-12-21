@@ -8,6 +8,7 @@
     --dark-900: #13123A;
     --dark-950: #0D0C27;
     --gray-scale-900: #111827;
+    --gray-scale-500: #6B7280;
     --dark-700: #7A7A90;
     --dark-50: #EEEEF1;
     --dark-200: #E0E0E6;
@@ -290,6 +291,34 @@ button {
 
 .mt-minus {
     margin-top: -19px;
+}
+
+.main-badge {
+    padding: 2px 8px;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 8px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-badge.red {
+    background-color: #F6E9EA;
+    color: #F6285F;
+}
+
+.main-badge.green {
+    background-color: #F0F9F8;
+    color: #12A58C;
+}
+
+.main-badge.grayed {
+    color: #374151;
+    background-color: var(--dark-50);
+    font-weight: 500;
 }
 
 .grayed-badge {
@@ -1522,14 +1551,17 @@ select.auth-form-control {
 }
 
 .btn-pay {
-    background-color: #d9534f;
-    border-color: #d9534f;
-    color: white;
+    background-color: #BA5154;
+    border-color: #BA5154;
+    color: var(--white-color);
+    border-radius: 10px;
+    font-weight: 700;
+    height: unset;
+    padding: 6px 24px;
 }
 
-.btn-pay:hover {
-    background-color: #c9302c;
-    border-color: #ac2925;
+.summary-card .btn-pay {
+    margin-top: 12px;
 }
 
 .notif-empty h5 {
@@ -1697,7 +1729,7 @@ select.auth-form-control {
    QR Code Page Styles
    =========================== */
 
-.qr-header {
+/* .qr-header {
     background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 100%);
     padding: 20px 20px 60px;
     border-bottom-left-radius: 40px;
@@ -1718,7 +1750,7 @@ select.auth-form-control {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .vip-badge {
     background: #243c7c;
@@ -2923,6 +2955,10 @@ select.auth-form-control {
 
 .dark-scale-900 {
     color: var(--gray-scale-900);
+}
+
+.gray-scale-500 {
+    color: var(--gray-scale-500);
 }
 
 .partner-header {
