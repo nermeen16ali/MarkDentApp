@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dental Trauma Management - Evidence-based Practice">
+    <link rel="icon" type="image/png" href="assets/images/logo-sm.png" />
     <title>Speaker Profile - MarkDent</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,148 +15,170 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body style="background-color: #fcfcfc;">
+<body>
 
     <!-- Speaker Profile Header -->
-    <div class="speaker-profile-header">
-        <!-- Top Bar -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <a href="speakers.html" class="btn-icon-white">
-                <i class="fas fa-chevron-left"></i>
-            </a>
-            <div class="d-flex gap-3">
-                <div class="header-icon-badge">
-                    <i class="fas fa-bell"></i>
-                    <span class="badge-dot">4</span>
-                </div>
-                <div class="header-icon-badge">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="badge-dot">4</span>
+    <div class="main-header speaker-profile-header">
+        <div class="container">
+            <!-- Top Bar -->
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="speakers.html" class="btn-icon-white">
+                    <img src="assets/images/bck-dark.svg" alt="back">
+                </a>
+                <div class="d-flex gap-3">
+                    <a href="notifications.html" class="header-icon-badge">
+                        <img src="assets/images/notification.svg" alt="notification">
+                        <span class="badge-dot">4</span>
+                    </a>
+                    <a href="cart.html" class="header-icon-badge">
+                        <img src="assets/images/cart.svg" alt="cart">
+                        <span class="badge-dot">4</span>
+                    </a>
                 </div>
             </div>
-        </div>
 
-        <!-- Profile Info -->
-        <div class="text-center">
-            <div class="speaker-profile-img-container mb-3">
-                <img src="https://via.placeholder.com/120" class="speaker-profile-img" alt="Speaker">
-                <img src="https://flagcdn.com/w40/eg.png" class="profile-flag-badge" alt="Egypt">
+            <!-- Profile Info -->
+            <div class="text-center speaker-main">
+                <div class="speaker-avatar-container">
+                    <img src="assets/images/person.png" class="speaker-avatar-lg" alt="Speaker">
+                    <img src="assets/images/flag.svg" class="flag-badge" alt="Egypt">
+                </div>
+                <h6 class="fw-bold primary-900 fs-12">Mostafa Mohammad</h6>
+                <div class="text-dark-700 fs-12">assistant professor</div>
             </div>
-            <h5 class="fw-bold text-primary mb-1">Mostafa Mohammad</h5>
-            <div class="text-muted small">assistant professor</div>
         </div>
     </div>
 
-    <div class="container pb-5 mb-5">
+    <div class="container pb-4">
 
         <!-- About Section -->
-        <div class="d-flex justify-content-between align-items-center mb-2 mt-4">
-            <div class="d-flex align-items-center gap-2">
-                <h6 class="fw-bold mb-0 text-dark">About the Speaker:</h6>
-                <span
-                    class="badge bg-light text-primary rounded-pill px-3 py-2 border border-light-subtle">Dental</span>
+        <div class="accordion-item mb-4">
+            <div class="accordion-header" id="headingExpo">
+                <button class="accordion-button p-0 bg-transparent shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExpo" aria-expanded="true" aria-controls="collapseExpo">
+                    <div class="w-100">
+                        <div class="d-flex align-items-center gap-10">
+                            <h6 class="sm-header">
+                                About the Speaker:
+                            </h6>
+                            <span class="colored-badge">Dental</span>
+                        </div>
+                    </div>
+                </button>
             </div>
-            <i class="fas fa-chevron-up text-dark"></i>
+            <div id="collapseExpo" class="accordion-collapse collapse show" aria-labelledby="headingExpo"
+                data-bs-parent="#menuAccordion">
+                <div class="accordion-body regular-text pt-1">
+                    <p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </p>
+                </div>
+            </div>
         </div>
-        <p class="text-muted small mb-4" style="line-height: 1.6; font-size: 13px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo...
-        </p>
 
         <!-- Speaker Lectures -->
-        <h6 class="fw-bold text-dark mb-3">Speaker Lectures</h6>
-        <div class="horizontal-scroll px-0 mb-4"
-            style="margin-left: -10px; margin-right: -10px; padding-left: 10px; padding-right: 10px;">
+        <h6 class="sm-header mb-3">Speaker Lectures</h6>
+        <div class="horizontal-scroll mb-4">
 
             <!-- Lecture Card 1 -->
             <div class="lecture-card">
                 <div class="lecture-img-box">
-                    <img src="https://via.placeholder.com/280x160" alt="Lecture">
+                    <div class="img-container">
+                        <img src="assets/images/lecture.jpg" class="img-fluid" alt="Lecture">
+                    </div>
                     <div class="date-badge">
-                        <div class="fw-bold fs-5">10</div>
-                        <div class="small text-uppercase" style="font-size: 10px;">DEC</div>
+                        <div class="fw-bold">10</div>
+                        <div class="text-uppercase">DEC</div>
                     </div>
                     <button class="btn-favorite">
-                        <i class="far fa-heart text-danger"></i>
+                        <i class="far fa-heart"></i>
                     </button>
                 </div>
-                <div class="p-3">
-                    <h6 class="fw-bold mb-2 text-dark" style="font-size: 14px;">InnovateX: The Future of</h6>
-                    <div class="d-flex align-items-center text-muted small mb-1" style="font-size: 11px;">
-                        <i class="far fa-clock me-2"></i> 10:00 AM - 04:00 PM
+                <div>
+                    <h6 class="fw-medium mb-2 dark-color fs-14 mb-6">InnovateX: The Future of</h6>
+                    <div class="d-flex align-items-center fs-10 primary-900 mb-6 justify-content-between">
+                        <div><img src="assets/images/clock.svg" class="me-1" alt="clock"> 10:00 AM - 04:00 PM</div>
+                        <div><img src="assets/images/calender.svg" class="me-1" alt="calender"> 30/1/2025</div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center text-muted small"
-                        style="font-size: 11px;">
-                        <div><i class="fas fa-map-marker-alt me-2"></i> Khufu (at Hall 1)</div>
-                        <div><i class="far fa-calendar me-1"></i> 30/1/2025</div>
-                    </div>
+                    <div class="text-dark-700 fs-10"><img src="assets/images/location-dark.svg" class="me-1"
+                            alt="location">
+                        Khufu (at Hall 1)</div>
                 </div>
             </div>
 
             <!-- Lecture Card 2 -->
             <div class="lecture-card">
                 <div class="lecture-img-box">
-                    <img src="https://via.placeholder.com/280x160" alt="Lecture">
+                    <div class="img-container">
+                        <img src="assets/images/leacture2.jpg" class="img-fluid" alt="Lecture">
+                    </div>
                     <div class="date-badge">
-                        <div class="fw-bold fs-5">10</div>
-                        <div class="small text-uppercase" style="font-size: 10px;">JUNE</div>
+                        <div class="fw-bold">10</div>
+                        <div class="text-uppercase">JUNE</div>
                     </div>
+                    <button class="btn-favorite">
+                        <i class="far fa-heart"></i>
+                    </button>
                 </div>
-                <div class="p-3">
-                    <h6 class="fw-bold mb-2 text-dark" style="font-size: 14px;">InnovateX: The Future of</h6>
-                    <div class="d-flex align-items-center text-muted small mb-1" style="font-size: 11px;">
-                        <i class="far fa-clock me-2"></i> 10:00 AM - 04:00 PM
+                <div>
+                    <h6 class="fw-medium mb-2 dark-color fs-14 mb-6">InnovateX: The Future of</h6>
+                    <div class="d-flex align-items-center fs-10 primary-900 mb-6 justify-content-between">
+                        <div><img src="assets/images/clock.svg" class="me-1" alt="clock"> 10:00 AM - 04:00 PM</div>
+                        <div><img src="assets/images/calender.svg" class="me-1" alt="calender"> 30/1/2025</div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center text-muted small"
-                        style="font-size: 11px;">
-                        <div><i class="fas fa-map-marker-alt me-2"></i> Khufu (at Hall 1)</div>
-                    </div>
+                    <div class="text-dark-700 fs-10"><img src="assets/images/location-dark.svg" class="me-1"
+                            alt="location">
+                        Khufu (at Hall 1)</div>
                 </div>
             </div>
 
         </div>
 
         <!-- Speaker Courses -->
-        <h6 class="fw-bold text-dark mb-3">Speaker Courses</h6>
+        <h6 class="sm-header mb-3">Speaker Courses</h6>
 
         <!-- Course Card -->
         <div class="course-card">
             <div class="course-img-box">
-                <img src="https://via.placeholder.com/350x180" alt="Course">
+                <img src="assets/images/lecture.jpg" alt="Course">
                 <div class="date-badge-white">
-                    <div class="small text-uppercase text-muted" style="font-size: 10px;">April</div>
-                    <div class="fw-bold fs-5 text-dark">14</div>
+                    <span>April</span>
+                    <span class="d-block fw-bold fs-14">14</span>
                 </div>
             </div>
-            <div class="p-3">
-                <h6 class="fw-bold mb-2 text-dark">Synchronize Fest 2024</h6>
-                <div class="d-flex align-items-center mb-2">
-                    <div class="d-flex me-2">
-                        <img src="https://via.placeholder.com/24" class="rounded-circle border border-white"
-                            style="width: 24px; height: 24px;" alt="">
-                        <img src="https://via.placeholder.com/24" class="rounded-circle border border-white"
-                            style="width: 24px; height: 24px; margin-left: -8px;" alt="">
-                        <img src="https://via.placeholder.com/24" class="rounded-circle border border-white"
-                            style="width: 24px; height: 24px; margin-left: -8px;" alt="">
+            <div class="course-body">
+                <h6 class="sm-header mb-1">Synchronize Fest 2024</h6>
+                <div class="d-flex align-items-center gap-1">
+                    <img src="assets/images/speaker-icon.svg" alt="speaker">
+                    <div class="d-flex align-items-center mb_2">
+                        <div class="d-flex me-3 participants">
+                            <img src="assets/images/human.webp" alt="participant">
+                            <img src="assets/images/human2.webp" alt="participant">
+                            <img src="assets/images/human.webp" alt="participant">
+                        </div>
+                        <span class="colored-badge border-0">Dental</span>
                     </div>
-                    <span class="badge bg-light text-primary rounded-pill px-3 border border-light-subtle">Dental</span>
                 </div>
-                <div class="d-flex align-items-center text-muted small mb-1" style="font-size: 12px;">
-                    <i class="far fa-clock me-2"></i> 10:00 AM - 04:00 PM
-                </div>
-                <div class="text-muted small mb-3" style="font-size: 12px;">
-                    <i class="fas fa-map-marker-alt me-2"></i> Khufu (at Hall 1), Floor 1
-                </div>
+                <div class="fs-10 primary-900 mb_2"><img src="assets/images/clock.svg" class="me-1" alt="clock"> 10:00
+                    AM - 04:00 PM</div>
+                <div class="text-dark-700 fs-10 mb-1"><img src="assets/images/location-dark.svg" class="me-1"
+                        alt="location">
+                    Khufu (at Hall 1)</div>
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h4 class="fw-bold text-primary mb-0">$25.00</h4>
+                    <h2 class="heading-2 primary-950">$25.00</h2>
                     <div class="d-flex gap-2">
-                        <button class="btn btn-primary rounded-3 px-3 py-2">
-                            <i class="fas fa-shopping-cart-plus"></i>
+                        <button class="btn-primary icon-btn">
+                            <img src="assets/images/cart-icon.svg" alt="cart">
                         </button>
-                        <button class="btn btn-outline-primary rounded-3 px-3 py-2">
-                            <i class="far fa-eye"></i>
+                        <button class="btn-outline-primary icon-btn">
+                            <img src="assets/images/view-icon.svg" alt="view">
                         </button>
                     </div>
                 </div>
@@ -165,6 +189,13 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('click', e => {
+            const i = e.target.closest('.btn-favorite')?.querySelector('i');
+            if (i) i.classList.toggle('fas'), i.classList.toggle('far');
+        });
+    </script>
+
 </body>
 
 </html>

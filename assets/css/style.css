@@ -81,6 +81,14 @@ button {
     margin-bottom: 6px;
 }
 
+.mb_2 {
+    margin-bottom: 2px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
 .mb-12 {
     margin-bottom: 12px;
 }
@@ -97,12 +105,20 @@ button {
     margin-bottom: 40px;
 }
 
+.gap-10 {
+    gap: 10px;
+}
+
 .mb-124 {
     margin-bottom: 124px;
 }
 
 .text-yellow {
     color: var(--accent-yellow);
+}
+
+.black-color {
+    color: #000000
 }
 
 .dark-950 {
@@ -266,6 +282,16 @@ button {
     margin-left: 8px;
 }
 
+.colored-badge {
+    padding: 4px 16px;
+    color: var(--custom-primary);
+    background: #009CE70F;
+    border-radius: 32px;
+    font-size: 12px;
+    line-height: 18px;
+    border: 1px solid var(--white-color);
+}
+
 /* Input Controls */
 .form-control {
     border: 1px solid var(--dark-200);
@@ -354,9 +380,6 @@ button {
 .btn-outline-primary {
     color: var(--custom-primary);
     border: 1px solid var(--custom-primary);
-    border-radius: var(--radius-md);
-    padding: 13px 20px;
-    height: 52px;
     font-weight: 500;
     font-size: 14px;
 }
@@ -374,6 +397,25 @@ button {
     border-radius: 6px;
     padding: 6.5px 8px;
     font-size: 14px;
+}
+
+.sm-header {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.regular-text {
+    font-size: 14px;
+    color: var(--dark-700);
+}
+
+.icon-btn {
+    width: 48px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Back Button */
@@ -410,7 +452,15 @@ button {
 
 .icon-primary {
     background-color: var(--primary-950);
-    color: white;
+    color: var(--white-color);
+}
+
+.primary-950 {
+    color: var(--primary-950);
+}
+
+.course-body {
+    padding: 6px 12px 16px 12px;
 }
 
 /* Custom Input Group */
@@ -506,16 +556,12 @@ select.auth-form-control {
 .horizontal-scroll {
     display: flex;
     overflow-x: auto;
-    gap: 15px;
-    padding: 0 20px 20px;
-    /* Bottom padding for shadow */
+    gap: 16px;
     scrollbar-width: none;
-    /* Firefox */
 }
 
 .horizontal-scroll::-webkit-scrollbar {
     display: none;
-    /* Chrome/Safari */
 }
 
 /* Speaker Card */
@@ -796,21 +842,30 @@ select.auth-form-control {
     box-shadow: none;
 }
 
-.menu-item-card .accordion-button::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23667085'%3e%3cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    transform: rotate(0deg);
-    /* Default right */
-    transition: transform 0.2s ease-in-out;
-    width: 1rem;
-    height: 1rem;
-    background-size: 1rem;
+/* Disable Bootstrap default icons */
+.accordion-button {
+    --bs-accordion-btn-icon: none;
+    --bs-accordion-btn-active-icon: none;
 }
 
-.menu-item-card .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230090e7'%3e%3cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    transform: rotate(90deg);
-    /* Rotate to down */
+/* CLOSED (default state) */
+.accordion-button::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='13' viewBox='0 0 7 13' fill='none'%3E%3Cpath d='M0.75 11.75L5.34317 7.22222C5.88561 6.6875 5.88561 5.8125 5.34317 5.27778L0.75 0.75' stroke='%2325306C' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 7px 13px;
+    width: 7px;
+    height: 13px;
+    margin-left: auto;
 }
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M12.1462 7.19471C12.0243 7.03334 11.6604 6.5516 11.4436 6.27389C11.0096 5.71767 10.4165 4.97858 9.77665 4.24169C9.13361 3.50107 8.4581 2.77978 7.85799 2.24954C7.55707 1.98366 7.29274 1.78162 7.07461 1.65013C6.86945 1.52645 6.74827 1.50073 6.74827 1.50073C6.74827 1.50073 6.63064 1.52645 6.4255 1.65012C6.20738 1.78162 5.94304 1.98365 5.64213 2.24953C5.04201 2.77978 4.3665 3.50108 3.72346 4.2417C3.08366 4.9786 2.49055 5.7177 2.05647 6.27392C1.83975 6.55163 1.47634 7.0327 1.35446 7.19407C1.10883 7.52759 0.63882 7.59953 0.305298 7.3539C-0.0282253 7.10826 -0.0994742 6.63877 0.146159 6.30524L0.148077 6.3027C0.275917 6.13345 0.652817 5.63443 0.873949 5.35108C1.31783 4.7823 1.92826 4.02139 2.59081 3.25829C3.25013 2.49891 3.9758 1.72021 4.64892 1.12546C4.98462 0.828839 5.32491 0.562122 5.65108 0.365496C5.95665 0.18128 6.34355 0 6.75006 0C7.15657 0 7.54346 0.181286 7.84904 0.365502C8.1752 0.562128 8.51549 0.828843 8.85119 1.12546C9.52431 1.72021 10.25 2.4989 10.9093 3.25827C11.5719 4.02137 12.1823 4.78226 12.6262 5.35104C12.8474 5.63459 13.2244 6.13363 13.3519 6.30253L13.3536 6.30472C13.5992 6.63824 13.5283 7.10821 13.1948 7.35385C12.8613 7.59947 12.3918 7.52821 12.1462 7.19471Z' fill='%23161616'/%3E%3C/svg%3E");
+    background-size: 14px 8px;
+    width: 14px;
+    height: 8px;
+}
+
 
 .menu-icon {
     width: 40px;
@@ -948,15 +1003,38 @@ select.auth-form-control {
    Speakers Page Styles
    =========================== */
 
+.main-header {
+    padding-block: 53.8px 12px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
 .custom-header {
     background: var(--custom-primary);
-    padding-block: 53.8px 12px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     color: var(--dark-50);
-    overflow: hidden;
-    margin-bottom: 24px;
-    /* height: 217px; */
+}
+
+.speaker-main {
+    margin-top: -16px;
+}
+
+.speaker-profile-header {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+}
+
+.participants img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--white-color);
+}
+
+.participants img:not(:first-of-type) {
+    margin-left: -12px;
 }
 
 .custom-header h6 {
@@ -1005,6 +1083,7 @@ select.auth-form-control {
 .header-icon-badge:nth-child(2) .badge-dot {
     right: 8px;
 }
+
 
 .event-logo {
     width: 44px;
@@ -1069,6 +1148,7 @@ select.auth-form-control {
 .speaker-avatar-container {
     position: relative;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 .speaker-avatar-lg {
@@ -1080,111 +1160,83 @@ select.auth-form-control {
 
 .flag-badge {
     position: absolute;
-    top: 5px;
-    right: 0;
-    width: 20px;
-    height: 20px;
+    top: 8px;
+    right: 4px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
-    border: 2px solid white;
     object-fit: cover;
 }
 
 /* ===========================
    Speaker Profile Page Styles
    =========================== */
-
-.speaker-profile-header {
-    background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 100%);
-    /* Lighter blue gradient */
-    padding: 20px 20px 40px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    margin-bottom: 20px;
-}
-
 .btn-icon-white {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    background: white;
+    background: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--dark-900);
-    text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.speaker-profile-img-container {
-    position: relative;
-    display: inline-block;
-}
-
-.speaker-profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid rgba(255, 255, 255, 0.3);
-}
-
-.profile-flag-badge {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 2px solid white;
-    object-fit: cover;
 }
 
 /* Lecture Card */
 .lecture-card {
-    min-width: 280px;
-    background: white;
-    border-radius: 20px;
+    min-width: 237px;
+    background: var(--white-color);
+    box-shadow: 0px 8px 30px 0px #5055880F;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid #f2f4f7;
+    padding: 9px 10px 19px 10px;
 }
 
 .lecture-img-box {
+    height: 131px;
     position: relative;
-    height: 160px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 14px;
 }
 
-.lecture-img-box img {
+
+
+/* .lecture-img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .date-badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    padding: 5px 10px;
+    top: 8px;
+    left: 8px;
+    background: #FFFFFFB2;
+    border-radius: 10px;
+    font-size: 10px;
     text-align: center;
-    min-width: 50px;
-    color: #344054;
+    min-width: 45px;
+    height: 45px;
+    color: var(--primary-900);
+}
+
+.date-badge .fw-bold {
+    font-size: 18px;
 }
 
 .btn-favorite {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 36px;
-    height: 36px;
+    top: 8px;
+    right: 8px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
-    background: white;
-    border: none;
+    background: #F9FAFB;
+    color: #FF383C;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Course Card */
@@ -1199,7 +1251,7 @@ select.auth-form-control {
 
 .course-img-box {
     position: relative;
-    height: 180px;
+    height: 120px;
 }
 
 .course-img-box img {
@@ -1210,14 +1262,15 @@ select.auth-form-control {
 
 .date-badge-white {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    background: white;
-    border-radius: 12px;
-    padding: 5px 12px;
+    top: 12px;
+    left: 12px;
+    background: var(--bg-color);
+    color: var(--dark-900);
+    font-size: 10px;
+    border-radius: 6px;
+    padding: 5px 8px;
     text-align: center;
-    min-width: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 40px;
 }
 
 /* ===========================
@@ -2697,4 +2750,8 @@ select.auth-form-control {
 
 .page-header h6 {
     font-weight: 700;
+}
+
+.grid-row {
+    --bs-gutter-x: 8px;
 }
