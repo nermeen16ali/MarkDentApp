@@ -170,6 +170,12 @@ button {
     line-height: 36px;
 }
 
+.heading-3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
 .heading-5 {
     font-size: 18px;
     font-weight: 700;
@@ -609,14 +615,12 @@ select.auth-form-control {
     text-align: center;
 }
 
-.speaker-img {
+.partner-img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
-    border: 3px solid #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
 }
 
 .speaker-name {
@@ -1511,7 +1515,6 @@ select.auth-form-control {
 
 .mark-read-link {
     color: #7BA205;
-    text-decoration: underline;
 }
 
 .unread .notification-icon {
@@ -1822,7 +1825,7 @@ select.auth-form-control {
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40%);
 }
 
-.social-icon-btn {
+/* .social-icon-btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1852,60 +1855,75 @@ select.auth-form-control {
 
 .social-icon-btn.youtube {
     background: #ff0000;
-}
+} */
 
 /* ===========================
    Get Ticket Page Styles
    =========================== */
 
 .ticket-selection-card {
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
-    border: 1px solid #f2f4f7;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-    min-height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background: transparent;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #E5E7EB;
+    min-height: 173px;
     transition: all 0.2s;
 }
 
 .ticket-selection-card:has(input:checked) {
-    background: #243c7c;
-    /* Dark blue */
-    color: white;
-    border-color: #243c7c;
+    background: var(--primary-950);
+    color: var(--primary-50);
+    border-color: var(--primary-950);
+}
+
+.card-price-text {
+    font-size: 30px;
+    color: var(--primary-950);
+    font-weight: 700;
+}
+
+.card-currency-text {
+    color: #7C83A7;
+    margin-inline-start: 2px;
+}
+
+.card-date-text {
+    font-size: 16px;
+    color: var(--dark-700);
 }
 
 .ticket-selection-card:has(input:checked) .card-title-text,
-.ticket-selection-card:has(input:checked) .card-price-text,
-.ticket-selection-card:has(input:checked) .card-currency-text,
-.ticket-selection-card:has(input:checked) .card-date-text {
+.ticket-selection-card:has(input:checked) .card-price-text {
     color: white !important;
 }
 
 .ticket-selection-card:has(input:checked) .card-currency-text,
 .ticket-selection-card:has(input:checked) .card-date-text {
-    opacity: 0.75;
+    color: var(--primary-50);
 }
 
 .ticket-icon-circle {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    background: white;
+    box-shadow: 0px 4px 11px 0px #00000005;
+    background-color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    margin-inline-end: 6px;
 }
 
 .custom-radio-circle {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border: 2px solid #98a2b3;
+    border: 1px solid var(--custom-primary);
+    float: right;
+}
+
+.custom-radio-circle+div {
+    padding-top: 12px;
 }
 
 .ticket-selection-card:has(input:checked) .custom-radio-circle {
@@ -1914,34 +1932,39 @@ select.auth-form-control {
     position: relative;
 }
 
+.ticket-selection-card:has(input:checked) .ticket-icon-circle {
+    background-color: var(--primary-100);
+}
+
 .ticket-selection-card:has(input:checked) .custom-radio-circle::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 12px;
-    height: 12px;
-    background-color: white;
+    width: 13.3px;
+    height: 13.3px;
+    background-color: var(--primary-50);
     border-radius: 50%;
 }
 
+/* 
 .event-banner-large {
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
-    height: 140px;
+    height: 127px;
     position: relative;
 }
 
 .cursor-pointer {
     cursor: pointer;
-}
+} */
 
 /* ===========================
    Transportation Page Styles
    =========================== */
 
-.transport-header {
+/* .transport-header {
     background: linear-gradient(180deg, #00b4db 0%, #0083b0 100%);
     padding: 20px 20px 40px;
     border-bottom-left-radius: 40px;
@@ -1983,9 +2006,9 @@ select.auth-form-control {
     transform: translateY(-50%);
     color: #101828;
     z-index: 1;
-}
+} */
 
-.illustration-box {
+/* .illustration-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1997,7 +2020,6 @@ select.auth-form-control {
     height: 120px;
     border-radius: 50%;
     border: 3px solid #243c7c;
-    /* Dark blue */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2066,7 +2088,6 @@ select.auth-form-control {
     color: #667085;
 }
 
-/* Simple Bottom Nav */
 .bottom-nav-simple {
     position: fixed;
     bottom: 0;
@@ -2288,22 +2309,14 @@ select.auth-form-control {
    Exhibitors Page Styles
    =========================== */
 .exhibitor-card {
-    background: white;
+    background: var(--white-color);
     border-radius: 16px;
-    height: 80px;
+    height: 63.78742599487305px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    border: 1px solid #f2f4f7;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-
-.exhibitor-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 10px 20px 0px #0000000D;
 }
 
 .exhibitor-card img {
@@ -2315,7 +2328,7 @@ select.auth-form-control {
 /* ===========================
    Exhibitor Details Page Styles
    =========================== */
-.exhibitor-header {
+/* .exhibitor-header {
     background: linear-gradient(180deg, #e0f2fe 0%, #fcfcfc 100%);
     padding-bottom: 20px;
 }
@@ -2330,7 +2343,7 @@ select.auth-form-control {
     justify-content: center;
     position: relative;
     color: #0090e7;
-}
+} */
 
 .exhibitor-logo-large {
     width: 120px;
@@ -2348,18 +2361,18 @@ select.auth-form-control {
 }
 
 .product-card-small {
-    background: white;
-    border-radius: 12px;
+    background: var(--white-color);
+    border-radius: 10px;
     padding: 10px;
-    border: 1px solid #f2f4f7;
+    border: 1px solid #A8ACC4;
     position: relative;
-    height: 100px;
+    height: 95px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.product-card-small img {
+.product-card-small>img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -2367,26 +2380,25 @@ select.auth-form-control {
 
 .download-btn {
     position: absolute;
-    bottom: 5px;
+    bottom: 6px;
     right: 5px;
-    width: 24px;
-    height: 24px;
-    padding: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
 }
 
-.info-card-row {
-    background: white;
-    border-radius: 16px;
-    padding: 15px;
+.download-btn img {
+    width: 13.4px;
+}
+
+/* .info-card-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-}
+} */
 
 .info-card-item {
     flex: 1;
@@ -2395,33 +2407,29 @@ select.auth-form-control {
 
 .vertical-divider {
     width: 1px;
-    height: 30px;
-    background: #f2f4f7;
+    height: 41px;
+    background: #E8E8EC;
 }
 
+/* 
 .contact-list-item {
     padding: 15px;
     display: flex;
     align-items: center;
     font-size: 14px;
     color: #344054;
-}
+} */
 
 .team-avatar {
-    width: 48px;
-    height: 48px;
-    background: #243c7c;
+    width: 52px;
+    height: 52px;
+    background: var(--primary-900);
     border-radius: 50%;
     display: flex;
     align-items: center;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    transition: transform 0.2s;
-}
-
-.social-icon-circle:hover {
-    transform: scale(1.1);
+    margin-right: 12px;
 }
 
 /* ===========================
@@ -2509,14 +2517,6 @@ select.auth-form-control {
     color: #101828;
 }
 
-.map-container {
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    height: 200px;
-    background: #e5e7eb;
-}
-
 .map-container img {
     width: 100%;
     height: 100%;
@@ -2546,7 +2546,7 @@ select.auth-form-control {
 /* ===========================
    Terms & Conditions Page Styles
    =========================== */
-.terms-content {
+/* .terms-content {
     padding: 0;
 }
 
@@ -2588,12 +2588,6 @@ select.auth-form-control {
     text-align: center;
 }
 
-.vertical-divider {
-    width: 1px;
-    height: 30px;
-    background: #f2f4f7;
-}
-
 .contact-list-item {
     padding: 15px;
     display: flex;
@@ -2613,11 +2607,7 @@ select.auth-form-control {
     justify-content: center;
     text-decoration: none;
     transition: transform 0.2s;
-}
-
-.social-icon-circle:hover {
-    transform: scale(1.1);
-}
+} */
 
 /* ===========================
    Transportation Results Page Styles
@@ -2927,4 +2917,9 @@ select.auth-form-control {
 
 .dark-scale-900 {
     color: var(--gray-scale-900);
+}
+
+.partner-header {
+    background-color: var(--dark-50);
+    padding: 13px 16px;
 }
