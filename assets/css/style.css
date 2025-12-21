@@ -11,6 +11,7 @@
     --dark-700: #7A7A90;
     --dark-50: #EEEEF1;
     --dark-200: #E0E0E6;
+    --dark-600: #9B9BAC;
     --primary-100: #E9EAF0;
     --primary-50: #F4F5F8;
     --primary-300: #BEC1D3;
@@ -182,6 +183,10 @@ button {
 .main-color,
 .iti__country-name {
     color: var(--dark-900);
+}
+
+.text-dark-600 {
+    color: var(--dark-600);
 }
 
 .text-dark-700,
@@ -1455,21 +1460,29 @@ select.auth-form-control {
     background-size: 100% 100%;
 }
 
+.empty-container {
+    min-height: 70vh;
+}
+
+.empty-icon {
+    width: 120px;
+}
+
 /* ===========================
    Notification Page Styles
    =========================== */
 
 .notification-item {
     display: flex;
+    align-items: center;
     gap: 12px;
-    padding: 15px;
-    background: white;
-    /* border-bottom: 1px solid #f2f4f7; */
+    padding: 12px 16px;
+    background: transparent;
 }
 
 .notification-item.unread {
-    background: #f0f9ff;
-    border-left: 4px solid #0090e7;
+    background: var(--primary-50);
+    border-left: 5px solid var(--custom-primary);
 }
 
 .notification-icon {
@@ -1514,6 +1527,17 @@ select.auth-form-control {
 .btn-pay:hover {
     background-color: #c9302c;
     border-color: #ac2925;
+}
+
+.notif-empty h5 {
+    color: #344B67;
+    line-height: 34px;
+}
+
+.notif-empty p {
+    color: #344B67;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 /* ===========================
