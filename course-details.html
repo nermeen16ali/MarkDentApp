@@ -16,9 +16,56 @@
 </head>
 
 <body>
-
-    <!-- Course details Header -->
-    <div class="main-header speaker-profile-header">
+    <!--Share Modal-->
+    <div class="modal fade modal-bottom-sheet" id="share-modal" tabindex="-1" aria-labelledby="centeredModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="heading-2 mb-4 black-color">Share with friends</h2>
+                    <div class="share-icons d-flex align-items-center justify-content-center flex-wrap mb-40">
+                        <button>
+                            <img src="assets/images/copy.svg" alt="copy link">
+                            <span>Copy Link</span>
+                        </button>
+                        <button>
+                            <img src="assets/images/whatsapp.svg" alt="whatsapp">
+                            <span>WhatsApp</span>
+                        </button>
+                        <button>
+                            <img src="assets/images/facebook.svg" alt="facebook">
+                            <span>Facebook</span>
+                        </button>
+                        <button>
+                            <img src="assets/images/massenger.svg" alt="massenger">
+                            <span>Messenger</span>
+                        </button>
+                        <button>
+                            <img src="assets/images/twitter.svg" alt="twitter">
+                            <span>Twitter</span>
+                        </button>
+                        <button>
+                            <img src="assets/images/insta.svg" alt="Instagram">
+                            <span>Instagram</span>
+                        </button>
+                        <button>
+                            <img src="assets/images/skype.svg" alt="Skype">
+                            <span>Skype</span>
+                        </button>
+                        <button>
+                            <img src="assets/images/massages.svg" alt="massages">
+                            <span>Massages</span>
+                        </button>
+                    </div>
+                    <button class="btn-outlined-primary-alt w-100" data-bs-dismiss="modal" aria-label="Close"><img
+                            src="assets/images/gray-close.svg" alt="close" class="me-2">Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <div class="main-header courses-details-header">
         <div class="container">
             <!-- Top Bar -->
             <div class="d-flex justify-content-between align-items-center">
@@ -36,21 +83,18 @@
                     </a>
                 </div>
             </div>
-
-            <!-- Profile Info -->
-            <div class="text-center speaker-main">
-                <div class="speaker-avatar-container">
-                    <img src="assets/images/person.png" class="speaker-avatar-lg" alt="Speaker">
-                    <img src="assets/images/flag.svg" class="flag-badge" alt="Egypt">
-                </div>
-                <h6 class="fw-bold primary-900 fs-12">Mostafa Mohammad</h6>
-                <div class="text-dark-700 fs-12">assistant professor</div>
-            </div>
         </div>
     </div>
-
-    <div class="container pb-4">
-
+    <!--Action Buttons-->
+    <div class="action-btns d-flex align-items-center justify-content-end gap-10">
+        <button class="icon-20" data-bs-toggle="modal" data-bs-target="#share-modal">
+            <img src="assets/images/share.svg" alt="share">
+        </button>
+        <button class="icon-20">
+            <img src="assets/images/pdf.svg" alt="pdf">
+        </button>
+    </div>
+    <div class="container pb-5">
         <!-- About Section -->
         <div class="accordion-item mb-4">
             <div class="accordion-header" id="headingExpo">
@@ -59,7 +103,7 @@
                     <div class="w-100">
                         <div class="d-flex align-items-center gap-10">
                             <h6 class="sm-header">
-                                About the Speaker:
+                                About the Course
                             </h6>
                             <span class="colored-badge">Dental</span>
                         </div>
@@ -81,110 +125,71 @@
                 </div>
             </div>
         </div>
-
-        <!-- Speaker Lectures -->
-        <h6 class="sm-header mb-3">Speaker Lectures</h6>
-        <div class="horizontal-scroll mb-4">
-
-            <!-- Lecture Card 1 -->
-            <div class="lecture-card">
-                <div class="lecture-img-box">
-                    <div class="img-container">
-                        <img src="assets/images/lecture.jpg" class="img-fluid" alt="Lecture">
-                    </div>
-                    <div class="date-badge">
-                        <div class="fw-bold">10</div>
-                        <div class="text-uppercase">DEC</div>
-                    </div>
-                    <button class="btn-favorite">
-                        <i class="far fa-heart"></i>
-                    </button>
-                </div>
-                <div>
-                    <h6 class="fw-medium mb-2 dark-color fs-14 mb-6">InnovateX: The Future of</h6>
-                    <div class="d-flex align-items-center fs-10 primary-900 mb-6 justify-content-between">
-                        <div><img src="assets/images/clock.svg" class="me-1" alt="clock"> 10:00 AM - 04:00 PM</div>
-                        <div><img src="assets/images/calender.svg" class="me-1" alt="calender"> 30/1/2025</div>
-                    </div>
-                    <div class="text-dark-700 fs-10"><img src="assets/images/location-dark.svg" class="me-1"
-                            alt="location">
-                        Khufu (at Hall 1)</div>
-                </div>
-            </div>
-
-            <!-- Lecture Card 2 -->
-            <div class="lecture-card">
-                <div class="lecture-img-box">
-                    <div class="img-container">
-                        <img src="assets/images/leacture2.jpg" class="img-fluid" alt="Lecture">
-                    </div>
-                    <div class="date-badge">
-                        <div class="fw-bold">10</div>
-                        <div class="text-uppercase">JUNE</div>
-                    </div>
-                    <button class="btn-favorite">
-                        <i class="far fa-heart"></i>
-                    </button>
-                </div>
-                <div>
-                    <h6 class="fw-medium mb-2 dark-color fs-14 mb-6">InnovateX: The Future of</h6>
-                    <div class="d-flex align-items-center fs-10 primary-900 mb-6 justify-content-between">
-                        <div><img src="assets/images/clock.svg" class="me-1" alt="clock"> 10:00 AM - 04:00 PM</div>
-                        <div><img src="assets/images/calender.svg" class="me-1" alt="calender"> 30/1/2025</div>
-                    </div>
-                    <div class="text-dark-700 fs-10"><img src="assets/images/location-dark.svg" class="me-1"
-                            alt="location">
-                        Khufu (at Hall 1)</div>
-                </div>
-            </div>
-
+        <!--Speakers Grid-->
+        <div class="d-flex align-items-center mb-2 flex-shrink-0">
+            <h5 class="sm-header dark-950">The Speaker</h5>
+            <span class="grayed-badge">3</span>
         </div>
-
-        <!-- Speaker Courses -->
-        <h6 class="sm-header mb-3">Speaker Courses</h6>
-
-        <!-- Course Card -->
-        <div class="course-card">
-            <div class="course-img-box">
-                <img src="assets/images/lecture.jpg" alt="Course">
-                <div class="date-badge-white">
-                    <span>April</span>
-                    <span class="d-block fw-bold fs-14">14</span>
-                </div>
-            </div>
-            <div class="course-body">
-                <h6 class="sm-header mb-1">Synchronize Fest 2024</h6>
-                <div class="d-flex align-items-center gap-1">
-                    <img src="assets/images/speaker-icon.svg" alt="speaker">
-                    <div class="d-flex align-items-center mb_2">
-                        <div class="d-flex me-3 participants">
-                            <img src="assets/images/human.webp" alt="participant">
-                            <img src="assets/images/human2.webp" alt="participant">
-                            <img src="assets/images/human.webp" alt="participant">
-                        </div>
-                        <span class="colored-badge border-0">Dental</span>
+        <!--Accreditation-->
+        <div class="row mb-2">
+            <div class="col-6 mb-2">
+                <div class="d-flex align-items-center gap-12 py-1">
+                    <div class="position-relative">
+                        <img src="assets/images/person.png" class="avatar-36" alt="speaker">
+                        <img src="assets/images/flag.svg" class="absolute-flag" alt="flag">
+                    </div>
+                    <div>
+                        <h6 class="fw-medium fs-14 mb_2">Dr. Ahmed Hassan</h6>
+                        <p class="fs-12 text-dark-700">assistant professor</p>
                     </div>
                 </div>
-                <div class="fs-10 primary-900 mb_2"><img src="assets/images/clock.svg" class="me-1" alt="clock"> 10:00
-                    AM - 04:00 PM</div>
-                <div class="text-dark-700 fs-10 mb-1"><img src="assets/images/location-dark.svg" class="me-1"
-                        alt="location">
-                    Khufu (at Hall 1)</div>
-
-                <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="heading-2 primary-950">$25.00</h2>
-                    <div class="d-flex gap-2">
-                        <a href="cart.html" class="btn-primary icon-btn">
-                            <img src="assets/images/cart-icon.svg" alt="cart">
-                        </a>
-                        <a href="course-details.html" class="btn-outline-primary icon-btn">
-                            <img src="assets/images/view-icon.svg" alt="view">
-                        </a>
+            </div>
+            <div class="col-6 mb-2">
+                <div class="d-flex align-items-center gap-12 py-1">
+                    <div class="position-relative">
+                        <img src="assets/images/person.png" class="avatar-36" alt="speaker">
+                        <img src="assets/images/flag.svg" class="absolute-flag" alt="flag">
+                    </div>
+                    <div>
+                        <h6 class="fw-medium fs-14 mb_2">Dr. Ahmed Hassan</h6>
+                        <p class="fs-12 text-dark-700">assistant professor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mb-2">
+                <div class="d-flex align-items-center gap-12 py-1">
+                    <div class="position-relative">
+                        <img src="assets/images/person.png" class="avatar-36" alt="speaker">
+                        <img src="assets/images/flag.svg" class="absolute-flag" alt="flag">
+                    </div>
+                    <div>
+                        <h6 class="fw-medium fs-14 mb_2">Dr. Ahmed Hassan</h6>
+                        <p class="fs-12 text-dark-700">assistant professor</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="white-box row-box mb-3">
+            <img src="assets/images/prize.svg" alt="Accreditation: 6h By ADA">
+            <h6 class="sm-header">Accreditation: 6h By ADA</h6>
+        </div>
+        <!--Course Topics-->
+        <div class="white-box">
+            <h6 class="sm-header mb-12">Course Topics</h6>
+            <ul class="d-flex flex-column gap-2 regular-text ps-3">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Bottom Nav Spacer -->
+    <div class="bottom-nav-spacer"></div>
 
+    <div class="app-footer">
+        <button type="submit" class="btn btn-primary btn-block">
+            <img src="assets/images/cart-icon.svg" class="me-1" alt="cart"> Add to Cart
+        </button>
     </div>
 
     <!-- Bootstrap 5 JS Bundle -->

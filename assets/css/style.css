@@ -109,6 +109,10 @@ button {
     gap: 10px;
 }
 
+.gap-12 {
+    gap: 12px;
+}
+
 .mb-124 {
     margin-bottom: 124px;
 }
@@ -139,6 +143,10 @@ button {
 
 .fs-12 {
     font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
 }
 
 .big-heading {
@@ -382,6 +390,16 @@ button {
     border: 1px solid var(--custom-primary);
     font-weight: 500;
     font-size: 14px;
+}
+
+.btn-outlined-primary-alt {
+    color: var(--primary-800);
+    padding: 10px;
+    border-radius: 6px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 800;
+    border: 1px solid #A8ACC4;
 }
 
 .btn-block {
@@ -1007,6 +1025,14 @@ select.auth-form-control {
     padding-block: 53.8px 12px;
     overflow: hidden;
     margin-bottom: 24px;
+    height: 217px;
+}
+
+.courses-details-header {
+    background-image: url(../images/lecture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
 }
 
 .custom-header {
@@ -1023,6 +1049,7 @@ select.auth-form-control {
 .speaker-profile-header {
     background-image: url(../images/header-bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .participants img {
@@ -1335,17 +1362,18 @@ select.auth-form-control {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
 }
 
-.cart-footer {
+.app-footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: white;
-    padding: 20px 20px 30px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
+    background: var(--white-color);
+    padding: 12px 16px 52px;
     z-index: 1000;
+}
+
+.app-footer .btn-primary {
+    font-weight: 800;
 }
 
 /* ===========================
@@ -2740,12 +2768,17 @@ select.auth-form-control {
 }
 
 .page-header a,
-.bck-btn {
+.bck-btn,
+.icon-20 {
     height: 20px;
     width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.action-btns {
+    padding: 6px 10px;
 }
 
 .page-header h6 {
@@ -2754,4 +2787,53 @@ select.auth-form-control {
 
 .grid-row {
     --bs-gutter-x: 8px;
+}
+
+.avatar-36 {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.absolute-flag {
+    width: 11.4px;
+    height: 11.4px;
+    border-radius: 50%;
+    top: 2px;
+    right: -4px;
+    position: absolute;
+}
+
+.white-box {
+    padding: 20px 16px;
+    box-shadow: 0px 8px 32px 0px #B15CDE1A;
+    background-color: var(--white-color);
+    border-radius: 16px;
+}
+
+.white-box.row-box {
+    padding: 0 16px 16px;
+    display: flex;
+    align-items: end;
+    gap: 8px;
+
+}
+
+.share-icons {
+    color: #3C3E56;
+    font-size: 13px;
+    gap: 21px;
+    max-width: 360px;
+}
+
+.share-icons button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.share-icons button:not(:first-child) span {
+    margin-top: -21px;
 }
