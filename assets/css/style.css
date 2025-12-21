@@ -1497,7 +1497,7 @@ select.auth-form-control {
     min-height: 70vh;
 }
 
-.empty-icon {
+.empty-icon img {
     width: 120px;
 }
 
