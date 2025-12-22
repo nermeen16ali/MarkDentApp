@@ -9,6 +9,7 @@
     --dark-950: #0D0C27;
     --gray-scale-900: #111827;
     --gray-scale-500: #6B7280;
+    --gray-scale-700: #374151;
     --sub-color: #747688;
     --title: #120D26;
     --dark-700: #7A7A90;
@@ -159,6 +160,10 @@ button {
     font-size: 14px;
 }
 
+.fs-16 {
+    font-size: 16px;
+}
+
 .big-heading {
     font-weight: 800;
     font-size: 36px;
@@ -238,10 +243,10 @@ button {
     color: var(--primary-900)
 }
 
-.close-btn {
+/* .close-btn {
     font-size: 20px;
     color: var(--dark-900);
-}
+} */
 
 .modal-backdrop {
     --bs-backdrop-bg: var(--dark-900);
@@ -1722,7 +1727,7 @@ select.auth-form-control {
 /* ===========================
    My Tickets Page Styles
    =========================== */
-
+/* 
 .ticket-pass {
     display: flex;
     border-radius: 12px;
@@ -1733,17 +1738,14 @@ select.auth-form-control {
 
 .ticket-pass.blue {
     background-color: #bae6fd;
-    /* Light blue */
 }
 
 .ticket-pass.green {
     background-color: #d1fae5;
-    /* Light green */
 }
 
 .ticket-pass.pink {
     background-color: #fce7f3;
-    /* Light pink */
 }
 
 .ticket-left-section {
@@ -1759,8 +1761,6 @@ select.auth-form-control {
     background-color: rgba(255, 255, 255, 0.2);
     position: relative;
 }
-
-/* Perforated Line Effect */
 .ticket-divider-vertical {
     width: 2px;
     background-image: linear-gradient(to bottom, #fff 50%, transparent 50%);
@@ -1776,7 +1776,6 @@ select.auth-form-control {
     width: 20px;
     height: 20px;
     background-color: #fcfcfc;
-    /* Match body bg */
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -1791,7 +1790,6 @@ select.auth-form-control {
     bottom: -10px;
 }
 
-/* Scalloped Edge on Right */
 .ticket-right-section::after {
     content: '';
     position: absolute;
@@ -1823,7 +1821,7 @@ select.auth-form-control {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
     border: 1px solid #f2f4f7;
-}
+} */
 
 /* ===========================
    QR Code Page Styles
@@ -1851,6 +1849,27 @@ select.auth-form-control {
     color: var(--white-color);
     font-size: 16px;
     height: 30px;
+}
+
+.ticket {
+    padding: 12px 29px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 69px;
+    background-repeat: no-repeat;
+}
+
+.ticket.blue {
+    background-image: url(../images/ticket-blue.svg);
+}
+
+.ticket.green {
+    background-image: url(../images/ticket-green.svg);
+}
+
+.ticket.red {
+    background-image: url(../images/ticket-red.svg);
 }
 
 /* ===========================
@@ -2127,7 +2146,7 @@ select.auth-form-control {
 /* ===========================
    Calendar Page Styles
    =========================== */
-
+/* 
 .calendar-illustration-circle {
     width: 160px;
     height: 160px;
@@ -2168,9 +2187,8 @@ select.auth-form-control {
     color: var(--custom-primary);
     font-size: 12px;
     font-weight: 600;
-}
+} */
 
-/* Date Cards */
 .date-card {
     background: var(--white-color);
     border-radius: 10.91px;
@@ -2209,7 +2227,7 @@ select.auth-form-control {
 }
 
 /* Hall Selector */
-.hall-selector {
+/* .hall-selector {
     background: #0090e7;
     color: white;
     border-radius: 30px;
@@ -2230,7 +2248,7 @@ select.auth-form-control {
     align-items: center;
     justify-content: center;
     font-size: 12px;
-}
+} */
 
 /* Timeline */
 .timeline-container {
@@ -2914,6 +2932,10 @@ select.auth-form-control {
     color: var(--gray-scale-500);
 }
 
+.gray-scale-700 {
+    color: var(--gray-scale-700);
+}
+
 .partner-header {
     background-color: var(--dark-50);
     padding: 13px 16px;
@@ -3116,4 +3138,17 @@ select.auth-form-control {
     border-top-left-radius: 120px;
     border-bottom-left-radius: 120px;
     transform: scaleY(1.5);
+}
+
+.bg-gray {
+    background-color: var(--bg-color);
+}
+
+.modal-body-scroll {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-body-scroll::-webkit-scrollbar {
+    display: none;
 }
