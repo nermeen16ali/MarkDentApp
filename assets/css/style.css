@@ -1128,12 +1128,12 @@ select.auth-form-control {
     overflow: hidden;
     margin-bottom: 24px;
     height: 217px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .courses-details-header {
     background-image: url(../images/lecture.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 0;
 }
 
@@ -1150,8 +1150,10 @@ select.auth-form-control {
 
 .speaker-profile-header {
     background-image: url(../images/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.about-header {
+    background-image: url(../images/about-header-bg.svg);
 }
 
 .participants img {
@@ -1373,7 +1375,7 @@ select.auth-form-control {
 }
 
 /* Course Card */
-/* .course-card {
+.course-card {
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -1404,7 +1406,7 @@ select.auth-form-control {
     padding: 5px 8px;
     text-align: center;
     min-width: 40px;
-} */
+}
 
 /* ===========================
    Cart Page Styles
@@ -2526,31 +2528,6 @@ select.auth-form-control {
     color: #101828;
 }
 
-.map-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.map-marker {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 40px;
-    height: 40px;
-    background: #0090e7;
-    border-radius: 50% 50% 50% 0;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.map-marker i {
-    color: white;
-    font-size: 20px;
-    transform: rotate(45deg);
-}
 
 /* ===========================
    Terms & Conditions Page Styles
@@ -2707,8 +2684,8 @@ select.auth-form-control {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    height: 200px;
-    background: #e5e7eb;
+    height: 140px;
+    background: var(--bg-color);
 }
 
 .map-container img {
@@ -2884,6 +2861,10 @@ select.auth-form-control {
     align-items: end;
     gap: 8px;
 
+}
+
+.picked-up {
+    margin-top: -70px;
 }
 
 .share-icons {
@@ -3087,7 +3068,7 @@ select.auth-form-control {
     justify-content: center;
 }
 
-.course-card {
+.banner-card {
     display: flex;
     height: 144px;
     border-radius: 8px;
@@ -3096,7 +3077,7 @@ select.auth-form-control {
 }
 
 /* LEFT CONTENT */
-.course-content {
+.banner-content {
     flex: 0 0 55%;
     padding-inline: 14px 6px;
     color: var(--white-color);
@@ -3125,13 +3106,13 @@ select.auth-form-control {
 } */
 
 /* RIGHT IMAGE */
-.course-image {
+.banner-image {
     flex: 1;
     position: relative;
     overflow: hidden;
 }
 
-.course-image img {
+.banner-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -3151,4 +3132,26 @@ select.auth-form-control {
 
 .modal-body-scroll::-webkit-scrollbar {
     display: none;
+}
+
+.grid-row-12 {
+    --bs-gutter-x: 12px;
+}
+
+.colored-card {
+    border: 1px solid #B9B9B94D;
+    color: #3C3C4399;
+    box-shadow: none;
+}
+
+.colored-card .course-body {
+    padding: 8px 12px;
+}
+
+.ellipse-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
