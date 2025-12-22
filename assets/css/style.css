@@ -191,6 +191,12 @@ button {
     background-color: var(--custom-primary);
 }
 
+.iti__flag {
+    width: 15.6px;
+    height: 15.6px;
+    border-radius: 50%;
+}
+
 .main-color,
 .iti__country-name {
     color: var(--dark-900);

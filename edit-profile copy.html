@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - MarkDent</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Intl Tel Input CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color: #fcfcfc;">
+
+    <!-- Header -->
+    <div class="d-flex align-items-center p-3 mb-3">
+        <a href="menu.html" class="text-dark text-decoration-none me-3">
+            <i class="fas fa-chevron-left fs-5"></i>
+        </a>
+        <h5 class="mb-0 fw-bold" style="color: #243c7c;">Edit Profile</h5>
+    </div>
+
+    <div class="container pb-5">
+
+        <!-- Avatar Section -->
+        <div class="text-center mb-4 position-relative" style="width: fit-content; margin: 0 auto;">
+            <img src="https://via.placeholder.com/100" class="rounded-circle" alt="Profile"
+                style="width: 80px; height: 80px; object-fit: cover;">
+            <div class="camera-icon-overlay">
+                <i class="fas fa-camera text-primary small"></i>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <form>
+            <!-- Full Name -->
+            <div class="mb-3">
+                <label class="form-label fw-bold small text-dark">Full Name</label>
+                <input type="text" class="form-control auth-form-control" value="Mostafa Mohammed">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label class="form-label fw-bold small text-dark">Password</label>
+                <div class="position-relative">
+                    <span class="position-absolute top-50 start-0 translate-middle-y ps-3 text-muted">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="password" class="form-control auth-form-control ps-5" value="Password123">
+                    <span class="position-absolute top-50 end-0 translate-middle-y pe-3 text-muted">
+                        <i class="fas fa-eye-slash"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-3">
+                <label class="form-label fw-bold small text-dark">Your Phone (WhatsApp Number)</label>
+                <div class="w-100">
+                    <input type="tel" id="phone" class="form-control auth-form-control w-100" value="+2012345678912">
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label fw-bold small text-dark">Email</label>
+                <input type="email" class="form-control auth-form-control" value="mmohamed123@gmail.com">
+            </div>
+
+            <!-- Title -->
+            <div class="mb-4">
+                <label class="form-label fw-bold small text-dark">Title</label>
+                <select class="form-select auth-form-control" style="background-color: #f9fafb;">
+                    <option selected>Dental</option>
+                    <option>Medical</option>
+                    <option>Student</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 mb-3 fw-bold">
+                <i class="fas fa-check me-2"></i> Update
+            </button>
+
+            <button type="button" class="btn btn-outline-secondary w-100 rounded-pill py-2 mb-3 fw-bold"
+                style="border-color: #d0d5dd; color: #344054;">
+                <i class="fas fa-times me-2"></i> Cancel
+            </button>
+
+            <button type="button" class="btn w-100 rounded-pill py-2 fw-bold"
+                style="background-color: #eaecf0; color: #475467;">
+                <i class="far fa-trash-alt me-2"></i> Delete Account
+            </button>
+
+        </form>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery (required for intl-tel-input) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Intl Tel Input JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+
+    <script>
+        // Initialize Intl Tel Input
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+            initialCountry: "eg",
+            separateDialCode: true,
+            preferredCountries: ["eg", "sa", "ae"]
+        });
+    </script>
+</body>
+
+</html>
