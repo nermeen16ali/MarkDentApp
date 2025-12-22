@@ -465,7 +465,16 @@ button {
     padding: 13px 20px;
     height: 52px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     white-space: nowrap;
+}
+
+.btn-dray {
+    background-color: #D3D6E2;
+    color: #4E4D6B;
+    font-weight: 700;
 }
 
 .btn-sm {
@@ -561,7 +570,8 @@ button {
 }
 
 .custom-input-group .input-icon {
-    font-size: 20px;
+    font-size: 16px;
+    color: #C7C7D1;
 }
 
 .custom-input-group .fa-lock {
@@ -574,7 +584,7 @@ button {
 }
 
 /* Auth Form Controls (Single Inputs/Selects) */
-.auth-form-control {
+/* .auth-form-control {
     border: 1px solid #475467;
     border-radius: var(--radius-lg);
     padding: 0 16px;
@@ -599,7 +609,7 @@ select.auth-form-control {
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 16px 12px;
-}
+} */
 
 /* ===========================
    Home Page Styles
@@ -3048,4 +3058,30 @@ select.auth-form-control {
     border-color: transparent transparent #344054 transparent;
     border-width: 0 6px 6px 6px;
     margin-top: -3px;
+}
+
+.profile-avatar {
+    position: relative;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.profile-avatar>img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.camera-icon {
+    width: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    border-radius: 4px;
+    background-color: var(--primary-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
