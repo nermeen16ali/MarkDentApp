@@ -13,6 +13,7 @@
     --dark-50: #EEEEF1;
     --dark-200: #E0E0E6;
     --dark-600: #9B9BAC;
+    --dark-800: #4E4D6B;
     --primary-100: #E9EAF0;
     --primary-50: #F4F5F8;
     --primary-300: #BEC1D3;
@@ -130,6 +131,10 @@ button {
 
 .dark-950 {
     color: var(--dark-950);
+}
+
+.dark-800 {
+    color: var(--dark-800);
 }
 
 .primary-800 {
@@ -3084,4 +3089,40 @@ select.auth-form-control {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.tab-btn {
+    padding: 5px 16px;
+    flex: 1;
+    font-size: 12px;
+    color: var(--custom-primary);
+    border: 1px solid #BEC1D3;
+    border-radius: 32px;
+}
+
+.tab-btn.active {
+    background-color: var(--custom-primary);
+    color: var(--primary-50);
+    font-weight: 700;
+    font-size: 14px;
+    border-color: var(--custom-primary);
+}
+
+.certification-card {
+    border: 1px solid #B9B9B94D;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.certification-card .img-certifcate {
+    height: 100px;
+}
+
+.certificate-text {
+    padding: 12px 8px 8px 8px;
+}
+
+.row-gutter-10 {
+    --bs-gutter-x: 10px;
 }
