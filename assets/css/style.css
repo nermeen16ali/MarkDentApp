@@ -323,7 +323,6 @@ button {
     border-radius: 16px;
     font-size: 12px;
     line-height: 18px;
-    margin-left: 8px;
     height: 24px;
     display: inline-flex;
     align-items: center;
@@ -484,6 +483,15 @@ button {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+}
+
+.white-btn {
+    background-color: var(--white-color);
+    color: var(--custom-primary);
+    font-size: 16px;
+    border: 1.5px solid #D3D6E2;
+    padding: 8px 12px;
+    border-radius: 12px;
 }
 
 .btn-dray {
@@ -1131,7 +1139,7 @@ select.auth-form-control {
     color: var(--dark-50);
 }
 
-.speaker-main {
+.mt-minus-3 {
     margin-top: -16px;
 }
 
@@ -1360,7 +1368,7 @@ select.auth-form-control {
 }
 
 /* Course Card */
-.course-card {
+/* .course-card {
     background: white;
     border-radius: 20px;
     overflow: hidden;
@@ -1391,7 +1399,7 @@ select.auth-form-control {
     padding: 5px 8px;
     text-align: center;
     min-width: 40px;
-}
+} */
 
 /* ===========================
    Cart Page Styles
@@ -1820,14 +1828,29 @@ select.auth-form-control {
 /* ===========================
    QR Code Page Styles
    =========================== */
-.vip-badge {
-    background: #243c7c;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-    display: inline-block;
+.qr-code {
+    background-image: url(../images/qr-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 163px;
+    display: flex;
+    align-items: center;
+}
+
+.qr-code-img {
+    width: 38%;
+}
+
+.qr-code-text {
+    width: 62%;
+}
+
+.move-badge {
+    background-color: var(--primary-900);
+    color: var(--white-color);
+    font-size: 16px;
+    height: 30px;
 }
 
 /* ===========================
@@ -3040,4 +3063,57 @@ select.auth-form-control {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.course-card {
+    display: flex;
+    height: 144px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #7BA205;
+}
+
+/* LEFT CONTENT */
+.course-content {
+    flex: 0 0 55%;
+    padding-inline: 14px 6px;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 
+.course-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.course-count {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.course-count span {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 6px;
+} */
+
+/* RIGHT IMAGE */
+.course-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
+    transform: scaleY(1.5);
 }
