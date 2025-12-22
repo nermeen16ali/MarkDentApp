@@ -187,6 +187,10 @@ button {
     padding-inline: 16px;
 }
 
+.bg-primary {
+    background-color: var(--custom-primary);
+}
+
 .main-color,
 .iti__country-name {
     color: var(--dark-900);
