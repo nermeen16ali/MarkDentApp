@@ -9,6 +9,8 @@
     --dark-950: #0D0C27;
     --gray-scale-900: #111827;
     --gray-scale-500: #6B7280;
+    --sub-color: #747688;
+    --title: #120D26;
     --dark-700: #7A7A90;
     --dark-50: #EEEEF1;
     --dark-200: #E0E0E6;
@@ -194,6 +196,14 @@ button {
 
 .bg-primary {
     background-color: var(--custom-primary);
+}
+
+.sub-color {
+    color: var(--sub-color);
+}
+
+.title-color {
+    color: var(--title);
 }
 
 .iti__flag {
