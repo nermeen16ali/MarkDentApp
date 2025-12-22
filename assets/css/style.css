@@ -1686,7 +1686,7 @@ select.auth-form-control {
    Hotels Page Styles
    =========================== */
 
-.hotels-header {
+/* .hotels-header {
     background: linear-gradient(180deg, #00b4db 0%, #0083b0 100%);
     padding: 20px 20px 40px;
     border-bottom-left-radius: 40px;
@@ -1712,18 +1712,19 @@ select.auth-form-control {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 .available-badge {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #22c55e;
+    top: 0;
+    left: 0;
+    background: #25D366;
     color: white;
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06px;
+    padding: 3px 8px;
+    border-radius: 12px 0 12px 0;
 }
 
 /* ===========================
