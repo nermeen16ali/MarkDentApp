@@ -32,7 +32,7 @@
             position: relative;
             width: 400px;
             height: 70px;
-            background: var(--white);
+            background: transparent;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -63,6 +63,7 @@
             text-align: center;
             font-weight: 500;
             text-decoration: none;
+            background: white;
         }
 
         .navigation ul li a .icon {
@@ -102,7 +103,7 @@
             top: -50%;
             width: 70px;
             height: 70px;
-            background: var(--white);
+            background: transparent;
             border-radius: 50%;
             border: 6px solid var(--clr);
             transition: 0.5s;
@@ -120,7 +121,7 @@
             height: 20px;
             background: transparent;
             border-top-right-radius: 20px;
-            box-shadow: 1px -10px 0 0 var(--clr);
+            box-shadow: 1px -10px 0 0 transparent;
         }
 
         .indicator::after {
@@ -132,7 +133,7 @@
             height: 20px;
             background: transparent;
             border-top-left-radius: 20px;
-            box-shadow: -1px -10px 0 0 var(--clr);
+            box-shadow: -1px -10px 0 0 transparent;
         }
 
         .navigation ul li:nth-child(1).active~.indicator {
@@ -238,7 +239,9 @@
                     <span class="text">Menu</span>
                 </a>
             </li>
-            <div class="indicator"></div>
+            <div class="indicator">
+                <span style="width: 80%; height: 80%; border-radius: 50%; background-color: white;"></span>
+            </div>
         </ul>
     </div>
 
