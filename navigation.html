@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --clr: #222327;
+            --act: #29fd53;
+        }
+
+        a {
+            color: var(--clr);
+            text-decoration: none;
+        }
+
+        body {
+            background: var(--clr);
+            color: var(--clr);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .navigation {
+            border-radius: 10px;
+            position: relative;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 70px;
+
+            ul {
+                display: flex;
+                width: 350px;
+                padding: 0;
+
+                li {
+                    &.list {
+                        position: relative;
+                        width: 70px;
+                        height: 70px;
+                        z-index: 1;
+                        list-style: none;
+
+                        a {
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            width: 100%;
+                            text-align: center;
+                            font-weight: 500;
+
+                            .icon {
+                                display: block;
+                                font-size: 1.5em;
+                                line-height: 75px;
+                                position: relative;
+                                text-align: center;
+                                transition: .5s;
+                            }
+
+                            .text {
+                                position: absolute;
+                                font-size: .75em;
+                                font-weight: 300;
+                                letter-spacing: .05em;
+                                text-transform: uppercase;
+                                transform: translateY(20px);
+                                transition: .5s;
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            .icon {
+                                transform: translateY(-32px);
+                            }
+
+                            .text {
+                                opacity: 1;
+                                transform: translateY(10px);
+                            }
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        &.active {
+                            ~.indicator {
+                                transform: translateX(calc(70px * 0));
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &.active {
+                            ~.indicator {
+                                transform: translateX(calc(70px * 1));
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &.active {
+                            ~.indicator {
+                                transform: translateX(calc(70px * 2));
+                            }
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        &.active {
+                            ~.indicator {
+                                transform: translateX(calc(70px * 3));
+                            }
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        &.active {
+                            ~.indicator {
+                                transform: translateX(calc(70px * 4));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .indicator {
+            background: var(--act);
+            border: 6px solid var(--clr);
+            border-radius: 50%;
+            position: absolute;
+            top: -50%;
+            width: 60px;
+            height: 60px;
+            transition: .5s;
+
+            &:before {
+                content: '';
+                background: #fff;
+                position: absolute;
+                top: 49%;
+                left: -23px;
+                width: 20px;
+                height: 20px;
+                border-top-right-radius: 20px;
+                box-shadow: 0 -10px 0 0 var(--clr);
+            }
+
+            &:after {
+                content: '';
+                background: transparent;
+                position: absolute;
+                top: 49%;
+                right: -23px;
+                width: 20px;
+                height: 20px;
+                border-top-left-radius: 20px;
+                box-shadow: 0 -10px 0 0 var(--clr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                    <span class="text">Messages</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="camera-outline"></ion-icon>
+                    </span>
+                    <span class="text">Photos</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    const list = document.querySelectorAll('.list');
+
+    function activeLink() {
+        list.forEach((item) =>
+            item.classList.remove('active'));
+        this.classList.add('active');
+    }
+
+    list.forEach((item) =>
+        item.addEventListener('click', activeLink));
+</script>
+
+</html>
