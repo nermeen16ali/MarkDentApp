@@ -3092,7 +3092,7 @@ select.auth-form-control {
 
 .banner-card {
     display: flex;
-    height: 144px;
+    min-height: 144px;
     border-radius: 8px;
     overflow: hidden;
     background: #7BA205;
@@ -3101,7 +3101,7 @@ select.auth-form-control {
 /* LEFT CONTENT */
 .banner-content {
     flex: 0 0 55%;
-    padding-inline: 14px 6px;
+    padding: 4px 6px 4px 14px;
     color: var(--white-color);
     display: flex;
     flex-direction: column;
@@ -3244,4 +3244,72 @@ select.auth-form-control {
     font-weight: 700;
     border-radius: 56px;
     width: fit-content;
+}
+
+.grid-row-15 {
+    --bs-gutter-x: 15px;
+}
+
+.list-card {
+    display: block;
+    border-radius: 10px;
+    height: 152px;
+    margin-bottom: 18px;
+}
+
+.list-card-img {
+    margin-right: -6px;
+    height: 123px;
+}
+
+.list-card.blue {
+    background: linear-gradient(180deg, #46B5F4 0%, #4F74D5 100%);
+    height: 162px;
+}
+
+.list-card.orange {
+    background: linear-gradient(180deg, #F4A446 0%, #D56F4F 100%);
+}
+
+.list-card.green {
+    background: linear-gradient(180deg, #46F457 0%, #0F8729 100%);
+}
+
+.list-card.red {
+    background: linear-gradient(180deg, #F44646 0%, #A20909 100%);
+
+}
+
+.list-card.move {
+    background: linear-gradient(180deg, #F446E3 0%, #941487 100%);
+}
+
+.list-card.darkblue {
+    background: linear-gradient(180deg, #0D09D0 0%, #060462 100%);
+}
+
+.list-card.yellow {
+    background: linear-gradient(180deg, #F4A446 0%, #D57304 100%);
+
+}
+
+.list-card.maincolors {
+    background: linear-gradient(180deg, #09D0AC 0%, #9795ED 100%);
+}
+
+.list-card h6 {
+    padding-left: 11px;
+    padding-bottom: 6px;
+}
+
+.list-card.blue h6 {
+    margin-top: -8px;
+}
+
+.list-card.maincolors h6 {
+    margin-top: -14px;
+}
+
+.list-card:not(.blue):not(.maincolors) h6 {
+    margin-top: -20px;
 }
