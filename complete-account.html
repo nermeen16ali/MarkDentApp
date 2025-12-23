@@ -25,16 +25,16 @@
         <!-- Form -->
         <form>
             <div class="mb-3">
-                <label class="form-label main-color">Full Name</label>
+                <label class="main-color mb-6 fw-bold">Full Name</label>
                 <input type="text" class="form-control" placeholder="Enter your Full Name" />
             </div>
             <div class="mb-3">
-                <label class="form-label main-color">Email</label>
+                <label class="main-color mb-6 fw-bold">Email</label>
                 <input type="email" class="form-control" placeholder="Enter your Email" />
             </div>
             <div class="mb-3">
-                <label class="form-label fw-bold">Category</label>
-                <select id="category-select">
+                <label class="main-color mb-6 fw-bold">Category</label>
+                <select class="choices-select">
                     <option value="" placeholder>Choose your Faculty</option>
                     <option value="dentistry">Dentistry</option>
                     <option value="medicine">Medicine</option>
@@ -45,7 +45,7 @@
                 </select>
             </div>
             <div class="mb-4">
-                <label class="mb-6 main-color"><strong>Your Password</strong></label>
+                <label class="main-color mb-6 fw-bold">Your Password</label>
                 <div class="custom-input-group">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path
@@ -70,20 +70,7 @@
     <!-- Choices.js JS -->
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="assets/js/pass-toggle.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Initialize Choices.js
-            const element = document.querySelector('#category-select');
-            const choices = new Choices(element, {
-                searchEnabled: true,
-                itemSelectText: '',
-                shouldSort: false,
-                placeholder: true,
-                placeholderValue: 'Choose your Faculty',
-                // removeItemButton: false // Default is false, which means no X in select
-            });
-        });
-    </script>
+    <script src="assets/js/choices.js"></script>
 </body>
 
 </html>

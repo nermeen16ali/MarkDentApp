@@ -10,6 +10,7 @@
     --gray-scale-900: #111827;
     --gray-scale-500: #6B7280;
     --gray-scale-700: #374151;
+    --text-color: #32302E;
     --sub-color: #747688;
     --title: #120D26;
     --dark-700: #7A7A90;
@@ -134,6 +135,10 @@ button {
 
 .dark-950 {
     color: var(--dark-950);
+}
+
+.text-color {
+    color: var(--text-color);
 }
 
 .dark-800 {
@@ -2447,7 +2452,7 @@ select.auth-form-control {
 /* ===========================
    Transportation Results Page Styles
    =========================== */
-.transport-result-card {
+/* .transport-result-card {
     background: #f9fafb;
     border: 1px solid #f2f4f7;
     border-radius: 16px;
@@ -2461,7 +2466,6 @@ select.auth-form-control {
     align-items: center;
     justify-content: center;
     color: #243c7c;
-    /* Dark blue */
     font-size: 20px;
 }
 
@@ -2477,7 +2481,7 @@ select.auth-form-control {
 .reserve-btn:hover {
     background-color: #007bb5;
     border-color: #007bb5;
-}
+} */
 
 /* ===========================
    About Event Page Styles
@@ -2600,12 +2604,20 @@ select.auth-form-control {
    Transportation Results Page Styles
    =========================== */
 .transport-result-card {
-    background: #f9fafb;
-    border: 1px solid #f2f4f7;
+    background: var(--primary-50);
+    border: 1px solid var(--primary-100);
     border-radius: 16px;
-    padding: 20px;
+    padding: 14px;
 }
 
+.btn-md.btn-primary {
+    padding-block: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* 
 .location-icon-box {
     width: 24px;
     height: 24px;
@@ -2613,23 +2625,22 @@ select.auth-form-control {
     align-items: center;
     justify-content: center;
     color: #243c7c;
-    /* Dark blue */
     font-size: 20px;
-}
+} */
 
-.reserve-btn {
+/* .reserve-btn {
     background-color: #0090e7;
     border-color: #0090e7;
     border-radius: 8px;
     padding: 8px 20px;
     font-weight: 600;
     font-size: 14px;
-}
+} */
 
-.reserve-btn:hover {
+/* .reserve-btn:hover {
     background-color: #007bb5;
     border-color: #007bb5;
-}
+} */
 
 /* ===========================
    About Event Page Styles

@@ -76,7 +76,7 @@
             <!-- Title -->
             <div class="mb-32">
                 <label class="mb-6 main-color fw-bold">Title</label>
-                <select id="category-select">
+                <select class="choices-select">
                     <option value="" placeholder>Choose your Faculty</option>
                     <option value="dentistry" selected>Dentistry</option>
                     <option value="medicine">Medicine</option>
@@ -122,20 +122,7 @@
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/intlTelInput.min.js"></script>
     <script src="assets/js/pass-toggle.js"></script>
     <script src="assets/js/init.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Initialize Choices.js
-            const element = document.querySelector('#category-select');
-            const choices = new Choices(element, {
-                searchEnabled: true,
-                itemSelectText: '',
-                shouldSort: false,
-                placeholder: true,
-                placeholderValue: 'Choose your Faculty',
-                // removeItemButton: false // Default is false, which means no X in select
-            });
-        });
-    </script>
+    <script src="assets/js/choices.js"></script>
 </body>
 
 </html>
