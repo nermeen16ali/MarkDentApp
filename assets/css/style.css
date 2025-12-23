@@ -467,6 +467,11 @@ button {
     font-size: 14px;
 }
 
+.btn:hover {
+    background-color: var(--primary-900);
+    border-color: var(--primary-900);
+}
+
 .btn-outline-primary.btn-sm {
     padding: 4px 16px;
     background-color: var(--white-color);
@@ -1227,6 +1232,11 @@ select.auth-form-control {
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
+}
+
+.markdent {
+    width: 56px;
+    height: 56px;
 }
 
 .search-container {
@@ -3166,4 +3176,72 @@ select.auth-form-control {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+}
+
+.event-banner {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 126px;
+}
+
+.event-banner img {
+    margin-top: -10px;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+    bottom: -30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 6.51px;
+    height: 6.51px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: #D3D6E2;
+}
+
+.carousel-indicators .active {
+    background-color: #91BC0E;
+}
+
+.banner-carousel {
+    border-radius: 16px;
+    margin-top: -42px;
+}
+
+.colored-carousel {
+    padding: 12px;
+    border-radius: 16px;
+    background: #65B9FF3B;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 20px 12px 20px;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    color: var(--primary-950);
+    position: relative;
+    height: 106px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.card-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.white-gray-btn {
+    background-color: #F3F4F6;
+    padding: 7px 23px;
+    color: var(--dark-950);
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 56px;
+    width: fit-content;
 }
