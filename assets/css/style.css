@@ -1154,6 +1154,11 @@ select.auth-form-control {
     color: var(--dark-50);
 }
 
+.dark-header {
+    background: var(--dark-900);
+    padding-top: 40px;
+}
+
 .mt-minus-3 {
     margin-top: -16px;
 }
