@@ -20,6 +20,28 @@
 </head>
 
 <body>
+    <!--Delete Account Modal-->
+    <div class="modal fade modal-bottom-sheet" id="delete-account-modal" tabindex="-1"
+        aria-labelledby="centeredModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-gray">
+                <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.21967 0.21967C0.512563 -0.0732233 0.987437 -0.0732233 1.28033 0.21967L7.75 6.68934L14.2197 0.21967C14.5126 -0.0732233 14.9874 -0.0732233 15.2803 0.21967C15.5732 0.512563 15.5732 0.987437 15.2803 1.28033L8.81066 7.75L15.2803 14.2197C15.5732 14.5126 15.5732 14.9874 15.2803 15.2803C14.9874 15.5732 14.5126 15.5732 14.2197 15.2803L7.75 8.81066L1.28033 15.2803C0.987437 15.5732 0.512563 15.5732 0.21967 15.2803C-0.0732233 14.9874 -0.0732233 14.5126 0.21967 14.2197L6.68934 7.75L0.21967 1.28033C-0.0732233 0.987437 -0.0732233 0.512563 0.21967 0.21967Z"
+                            fill="#161616" />
+                    </svg>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="img-container mb-3">
+                        <img src="assets/images/shoked.gif" class="img-fluid img-80" alt="Shoked Icon">
+                    </div>
+                    <h5 class="heading-5 mb-32">Are you sure you want to Delete your account ?</h5>
+                    <button class="btn-block outlined-red-btn w-75 mx-auto">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="page-header container">
         <a href="course-details.html">
             <img src="assets/images/bck-dark.svg" alt="back">
@@ -102,7 +124,8 @@
                     class="me-2">Cancel
             </button>
 
-            <button type="submit" class="btn btn-dray btn-block mb-2">
+            <a href="#" class="btn btn-dray btn-block mb-2" data-bs-toggle="modal"
+                data-bs-target="#delete-account-modal">
                 <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="20" height="22" viewBox="0 0 20 22"
                     fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -110,7 +133,7 @@
                         fill="#515989" />
                 </svg>
                 Delete Account
-            </button>
+            </a>
         </form>
     </div>
 

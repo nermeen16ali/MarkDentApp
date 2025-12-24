@@ -725,6 +725,16 @@ select.auth-form-control {
     margin-bottom: 8px;
 }
 
+.img-80 {
+    width: 80px;
+}
+
+.outlined-red-btn {
+    color: #A92629;
+    border: 1px solid #A92629;
+    font-weight: 700;
+}
+
 .speaker-name {
     font-size: 13px;
     font-weight: 600;
