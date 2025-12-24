@@ -142,6 +142,10 @@ button {
     color: var(--dark-950);
 }
 
+.opacity-80 {
+    opacity: 80%;
+}
+
 .text-color {
     color: var(--text-color);
 }
@@ -358,6 +362,12 @@ button {
     color: #374151;
     background-color: var(--dark-50);
     font-weight: 500;
+}
+
+.red-badge {
+    background-color: #BA5154;
+    color: var(--white-color);
+    height: 18px;
 }
 
 .grayed-badge {
@@ -3594,4 +3604,55 @@ select.auth-form-control {
 
 .navigation ul li:nth-child(4).active~.indicator {
     transform: translateX(calc(87.5px * 3 + 8.75px));
+}
+
+.visa-card {
+    box-shadow: 0px 4px 10px 0px #458FFF33;
+    padding: 20px 20px 20px 24px;
+    background-color: #85B3F7;
+    color: var(--white-color);
+    border-radius: 16px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blur-shape {
+    position: absolute;
+    bottom: -60px;
+    right: -40px;
+    width: 114px;
+    height: 178px;
+    background: #003A92;
+    filter: blur(25px);
+    border-radius: 60% 40% 50% 70% / 60% 70% 40% 50%;
+    opacity: 0.9;
+}
+
+.blur-shape-blue {
+    position: absolute;
+    width: 110px;
+    height: 123px;
+    background: #4E8BE6;
+    filter: blur(10px);
+    opacity: 1;
+    top: -30px;
+    left: -30px;
+    border-radius:
+        65% 35% 55% 45% / 70% 60% 40% 30%;
+}
+
+.visa-card .form-control {
+    height: unset;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.img-66 {
+    width: 66px;
+}
+
+.img-28 {
+    width: 28px;
 }

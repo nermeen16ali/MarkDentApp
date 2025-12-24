@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .curved-nav-bg {
+            width: 443px;
+            height: 91px;
+            /* visible shape height */
+            background: #fff;
+            position: relative;
+
+            border-radius: 36px;
+
+            /* Drop shadow from SVG */
+            box-shadow: 16px -3px 25px rgba(0, 0, 0, 0.11);
+
+            /* Prevent overflow for pseudo curve */
+            overflow: hidden;
+        }
+
+        .curved-nav-bg::before {
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 20px;
+
+            width: 140px;
+            height: 80px;
+
+            background: white;
+            border-radius: 50%;
+
+            transform: rotate(-12deg);
+        }
+
+        @media (max-width: 768px) {
+            .curved-nav-bg {
+                width: 100%;
+                max-width: 443px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="curved-nav-bg"></div>
+</body>
+
+</html>
