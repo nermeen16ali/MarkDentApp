@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
-    /* Colors */
+
     --custom-primary: #009CE7;
-    /* Bright Blue */
     --primary-hover: #007bb5;
     --dark-900: #13123A;
     --dark-950: #0D0C27;
@@ -35,19 +34,10 @@
     --input-border: #d0d5dd;
     --error-color: #d92d20;
     --success-color: #039855;
-
-    /* Spacing & Radius */
     --radius-lg: 16px;
     --radius-md: 12px;
     --radius-sm: 8px;
-
-    /* Font */
     --main-font: "Nunito Sans", sans-serif;
-
-    --clr: #FAFAFA;
-    --act: #0095DA;
-    --inactive: #4E4D6B;
-    --white: #ffffff;
 }
 
 *,
@@ -71,7 +61,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Typography */
+
 h1,
 h2,
 h3,
@@ -257,10 +247,7 @@ button {
     color: var(--primary-900)
 }
 
-/* .close-btn {
-    font-size: 20px;
-    color: var(--dark-900);
-} */
+
 
 .modal-backdrop {
     --bs-backdrop-bg: var(--dark-900);
@@ -287,7 +274,7 @@ button {
     padding: 0;
 }
 
-/*modal animation */
+
 .modal.modal-bottom-sheet .modal-dialog {
     position: fixed;
     bottom: 0;
@@ -390,7 +377,7 @@ button {
     border: 1px solid var(--white-color);
 }
 
-/* Input Controls */
+
 .form-control {
     border: 1px solid var(--dark-200);
     border-radius: var(--radius-md);
@@ -468,7 +455,7 @@ button {
     padding-left: 12px;
 }
 
-/* Buttons */
+
 .btn-primary {
     background-color: var(--custom-primary);
     border-color: var(--custom-primary);
@@ -556,14 +543,10 @@ button {
     justify-content: center;
 }
 
-/* Back Button */
-/* .btn-back {
-    color: var(--dark-900);
-    font-size: 24px;
-    margin-bottom: 24px;
-} */
 
-/* OTP Inputs */
+
+
+
 .otp-container {
     display: flex;
     justify-content: space-between;
@@ -577,7 +560,7 @@ button {
     font-size: 18px;
 }
 
-/* Icons */
+
 .icon-container {
     width: 52px;
     height: 52px;
@@ -605,7 +588,7 @@ button {
     padding: 6px 12px 16px 12px;
 }
 
-/* Custom Input Group */
+
 .custom-input-group {
     display: flex;
     align-items: center;
@@ -636,45 +619,18 @@ button {
     color: #C7C7D1;
 }
 
-/* Auth Form Controls (Single Inputs/Selects) */
-/* .auth-form-control {
-    border: 1px solid #475467;
-    border-radius: var(--radius-lg);
-    padding: 0 16px;
-    height: 56px;
-    background-color: var(--input-bg);
-    color: var(--dark-900);
-    width: 100%;
-    display: block;
-    font-size: 16px;
-    transition: all 0.2s;
-}
 
-.auth-form-control:focus {
-    border-color: var(--custom-primary);
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 144, 231, 0.1);
-}
 
-select.auth-form-control {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23344054' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 1rem center;
-    background-size: 16px 12px;
-} */
 
-/* ===========================
-   Home Page Styles
-   =========================== */
 
-/* Home Header */
+
+
 .home-header {
     background: linear-gradient(180deg, #0090e7 0%, #007bb5 100%);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     padding: 20px 20px 100px;
-    /* Extra padding bottom for overlap */
+
     color: white;
     position: relative;
     overflow: hidden;
@@ -699,7 +655,7 @@ select.auth-form-control {
     justify-content: center;
 }
 
-/* Horizontal Scroll */
+
 .horizontal-scroll {
     display: flex;
     overflow-x: auto;
@@ -711,7 +667,7 @@ select.auth-form-control {
     display: none;
 }
 
-/* Speaker Card */
+
 .speaker-card {
     min-width: 120px;
     text-align: center;
@@ -747,10 +703,10 @@ select.auth-form-control {
     color: var(--dark-700);
 }
 
-/* Promo Banner */
+
 .promo-banner {
     background: #84bd00;
-    /* Green color */
+
     border-radius: 20px;
     margin: 0 20px 30px;
     padding: 20px;
@@ -792,7 +748,7 @@ select.auth-form-control {
     gap: 5px;
 }
 
-/* Partner Card */
+
 .partner-card {
     min-width: 100px;
     text-align: center;
@@ -827,46 +783,14 @@ select.auth-form-control {
     color: var(--dark-700);
 }
 
-/* Bottom Navigation */
+
 .bottom-nav-spacer {
-    height: 100px;
+    height: 93px;
 }
 
-/* .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
 
-.nav-item-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #667085;
-    font-size: 11px;
-    gap: 5px;
-    text-decoration: none;
-}
 
-.nav-item-link i {
-    font-size: 20px;
-}
 
-.nav-item-link.active {
-    color: var(--custom-primary);
-} */
-
-/* Floating Home Button */
 .nav-center-wrapper {
     position: relative;
     top: -35px;
@@ -896,35 +820,9 @@ select.auth-form-control {
     font-size: 24px;
 }
 
-/* ===========================
-   Menu Page Styles
-   =========================== */
 
-/* .menu-header {
-    padding: 20px;
-}
 
-.btn-close-custom {
-    font-size: 24px;
-    color: var(--dark-900);
-    text-decoration: none;
-}
 
-.profile-card {
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-    border: 1px solid #f2f4f7;
-}
-
-.profile-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-} */
 .dark-btn {
     background-color: var(--dark-950);
     color: var(--white-color);
@@ -933,37 +831,9 @@ select.auth-form-control {
     font-size: 14px;
 }
 
-/* .edit-profile-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #f79009;
-    font-size: 18px;
-} */
 
-/* .profile-link-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    background: #f9fafb;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: var(--dark-900);
-    transition: background 0.2s;
-}
 
-.profile-link-item:last-child {
-    margin-bottom: 0;
-}
 
-.link-icon-box {
-    font-size: 20px;
-    color: #344054;
-    width: 24px;
-    text-align: center;
-} */
 
 .menu-list {
     display: flex;
@@ -986,7 +856,7 @@ select.auth-form-control {
     border-color: var(--custom-primary);
 }
 
-/* Accordion Overrides */
+
 .menu-item-card .accordion-button {
     color: var(--dark-900);
     font-weight: 500;
@@ -1003,13 +873,13 @@ select.auth-form-control {
     box-shadow: none;
 }
 
-/* Disable Bootstrap default icons */
+
 .accordion-button {
     --bs-accordion-btn-icon: none;
     --bs-accordion-btn-active-icon: none;
 }
 
-/* CLOSED (default state) */
+
 .accordion-button::after {
     content: "";
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='13' viewBox='0 0 7 13' fill='none'%3E%3Cpath d='M0.75 11.75L5.34317 7.22222C5.88561 6.6875 5.88561 5.8125 5.34317 5.27778L0.75 0.75' stroke='%2325306C' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -1038,9 +908,7 @@ select.auth-form-control {
     color: #344054;
 }
 
-/* ===========================
-   Special Events Styles
-   =========================== */
+
 
 .special-events-banner {
     background: var(--custom-primary);
@@ -1160,12 +1028,9 @@ select.auth-form-control {
     padding-right: 12px;
 }
 
-/* ===========================
-   Speakers Page Styles
-   =========================== */
-
 .main-header {
-    padding-block: 53.8px 12px;
+    padding-block: 40px 12px;
+    /* padding-block: 53.8px 12px; */
     overflow: hidden;
     margin-bottom: 24px;
     height: 217px;
@@ -1277,7 +1142,7 @@ select.auth-form-control {
 
 .search-container {
     position: relative;
-    margin-top: 15px;
+    margin-top: 26px;
 }
 
 .search-input {
@@ -1351,9 +1216,7 @@ select.auth-form-control {
     object-fit: cover;
 }
 
-/* ===========================
-   Speaker Profile Page Styles
-   =========================== */
+
 .btn-icon-white {
     width: 32px;
     height: 32px;
@@ -1364,7 +1227,7 @@ select.auth-form-control {
     justify-content: center;
 }
 
-/* Lecture Card */
+
 .lecture-card {
     min-width: 237px;
     background: var(--white-color);
@@ -1384,11 +1247,7 @@ select.auth-form-control {
 
 
 
-/* .lecture-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
+
 
 .date-badge {
     position: absolute;
@@ -1425,7 +1284,7 @@ select.auth-form-control {
     height: 38px;
 }
 
-/* Course Card */
+
 .course-card {
     background: white;
     border-radius: 20px;
@@ -1459,13 +1318,11 @@ select.auth-form-control {
     min-width: 40px;
 }
 
-/* ===========================
-   Cart Page Styles
-   =========================== */
+
 
 .cart-header {
     background: white;
-    /* box-shadow: 0 1px 3px rgba(0,0,0,0.05); */
+
 }
 
 .cart-item {
@@ -1540,7 +1397,7 @@ select.auth-form-control {
     background-color: var(--primary-950);
 }
 
-/* Section Header Strip */
+
 .section-header-strip {
     border-radius: 4px;
     padding-inline: 15px 8px;
@@ -1590,7 +1447,7 @@ select.auth-form-control {
     left: 0;
     width: 100%;
     background: var(--white-color);
-    padding: 12px 16px 52px;
+    padding: 12px 16px 32px;
     z-index: 1000;
 }
 
@@ -1601,9 +1458,7 @@ select.auth-form-control {
     border-radius: 6px;
 }
 
-/* ===========================
-   Checkout Page Styles
-   =========================== */
+
 
 .checkout-card {
     background-color: var(--white-color);
@@ -1659,9 +1514,7 @@ select.auth-form-control {
     width: 102px;
 }
 
-/* ===========================
-   Notification Page Styles
-   =========================== */
+
 
 .notification-item {
     display: flex;
@@ -1733,37 +1586,9 @@ select.auth-form-control {
     line-height: 28px;
 }
 
-/* ===========================
-   Hotels Page Styles
-   =========================== */
 
-/* .hotels-header {
-    background: linear-gradient(180deg, #00b4db 0%, #0083b0 100%);
-    padding: 20px 20px 40px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    color: white;
-    margin-bottom: 20px;
-}
 
-.hotel-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
-    border: 1px solid #f2f4f7;
-}
 
-.hotel-img-box {
-    position: relative;
-    height: 120px;
-}
-
-.hotel-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 
 .available-badge {
     position: absolute;
@@ -1778,108 +1603,10 @@ select.auth-form-control {
     border-radius: 12px 0 12px 0;
 }
 
-/* ===========================
-   My Tickets Page Styles
-   =========================== */
-/* 
-.ticket-pass {
-    display: flex;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    min-height: 100px;
-}
 
-.ticket-pass.blue {
-    background-color: #bae6fd;
-}
 
-.ticket-pass.green {
-    background-color: #d1fae5;
-}
 
-.ticket-pass.pink {
-    background-color: #fce7f3;
-}
 
-.ticket-left-section {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.ticket-right-section {
-    width: 80px;
-    background-color: rgba(255, 255, 255, 0.2);
-    position: relative;
-}
-.ticket-divider-vertical {
-    width: 2px;
-    background-image: linear-gradient(to bottom, #fff 50%, transparent 50%);
-    background-size: 2px 10px;
-    background-repeat: repeat-y;
-    position: relative;
-}
-
-.ticket-divider-vertical::before,
-.ticket-divider-vertical::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #fcfcfc;
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.ticket-divider-vertical::before {
-    top: -10px;
-}
-
-.ticket-divider-vertical::after {
-    bottom: -10px;
-}
-
-.ticket-right-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -10px;
-    height: 100%;
-    width: 20px;
-    background-image: radial-gradient(circle, #fcfcfc 10px, transparent 11px);
-    background-size: 20px 20px;
-    background-position: -10px 0;
-    background-repeat: repeat-y;
-}
-
-.ticket-icon-box {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #101828;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    color: #101828;
-}
-
-.course-schedule-card {
-    background: white;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
-    border: 1px solid #f2f4f7;
-} */
-
-/* ===========================
-   QR Code Page Styles
-   =========================== */
 .qr-code {
     background-image: url(../images/qr-bg.svg);
     background-size: cover;
@@ -1926,9 +1653,7 @@ select.auth-form-control {
     background-image: url(../images/ticket-red.svg);
 }
 
-/* ===========================
-   Get Ticket Page Styles
-   =========================== */
+
 
 .ticket-selection-card {
     background: transparent;
@@ -2023,225 +1748,14 @@ select.auth-form-control {
     border-radius: 50%;
 }
 
-/* 
-.event-banner-large {
-    border-radius: 16px;
-    overflow: hidden;
-    height: 127px;
-    position: relative;
-}
 
-.cursor-pointer {
-    cursor: pointer;
-} */
 
-/* ===========================
-   Transportation Page Styles
-   =========================== */
 
-/* .transport-header {
-    background: linear-gradient(180deg, #00b4db 0%, #0083b0 100%);
-    padding: 20px 20px 40px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    color: white;
-    margin-bottom: 20px;
-}
 
-.header-icon-badge-blue {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
 
-.search-container-white {
-    position: relative;
-    margin-top: 15px;
-}
 
-.search-input-white {
-    border-radius: 12px;
-    padding: 10px 10px 10px 40px;
-    border: none;
-    font-size: 14px;
-    background: white;
-    color: #101828;
-}
 
-.search-icon-dark {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #101828;
-    z-index: 1;
-} */
 
-/* .illustration-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.pin-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #243c7c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: #243c7c;
-    font-size: 40px;
-}
-
-/* Pin Shape Effect */
-.pin-circle::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    width: 30px;
-    height: 30px;
-    border-right: 3px solid #243c7c;
-    border-bottom: 3px solid #243c7c;
-    background: white;
-}
-
-.pin-circle .fa-bus {
-    z-index: 1;
-}
-
-/* Decorative Stars/Dots */
-.pin-circle .star-1 {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    font-size: 14px;
-    color: #243c7c;
-}
-
-.pin-circle .star-2 {
-    position: absolute;
-    bottom: 10px;
-    right: -20px;
-    font-size: 18px;
-    color: #243c7c;
-}
-
-.pin-circle .dot-1 {
-    position: absolute;
-    top: 20px;
-    left: -10px;
-    font-size: 10px;
-    color: #243c7c;
-}
-
-.pin-circle .dot-2 {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    font-size: 8px;
-    color: #243c7c;
-}
-
-.custom-select-lg {
-    height: 56px;
-    border-radius: 12px;
-    border: 1px solid #d0d5dd;
-    padding: 0 16px;
-    font-size: 16px;
-    color: #667085;
-}
-
-.bottom-nav-simple {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-.nav-item-simple {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #667085;
-    font-size: 11px;
-    gap: 5px;
-    text-decoration: none;
-}
-
-.nav-item-simple i {
-    font-size: 20px;
-}
-
-.nav-item-simple.active {
-    color: var(--custom-primary);
-}
-
-/* ===========================
-   Calendar Page Styles
-   =========================== */
-/* 
-.calendar-illustration-circle {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background: #f0f9ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.nav-item-active-wrapper {
-    position: relative;
-    top: -25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.active-floating {
-    width: 50px;
-    height: 50px;
-    background: var(--custom-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 144, 231, 0.3);
-    margin-bottom: 5px;
-}
-
-.active-floating i {
-    font-size: 20px;
-}
-
-.active-label {
-    color: var(--custom-primary);
-    font-size: 12px;
-    font-weight: 600;
-} */
 
 .date-card {
     background: var(--white-color);
@@ -2280,31 +1794,10 @@ select.auth-form-control {
     padding: 3.75px;
 }
 
-/* Hall Selector */
-/* .hall-selector {
-    background: #0090e7;
-    color: white;
-    border-radius: 30px;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.btn-icon-sm {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-} */
 
-/* Timeline */
+
+
 .timeline-container {
     position: relative;
 }
@@ -2334,22 +1827,9 @@ select.auth-form-control {
     padding-block: 4px;
 }
 
-/* 
-.timeline-time::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -8px;
-    height: 100%;
-    width: 2px;
-    background: #e4e7ec;
-}
 
-.timeline-row:last-child .timeline-time::after {
-    height: 50%;
-} */
 
-/* Event Card Timeline */
+
 .event-card-timeline {
     background: var(--primary-50);
     border-radius: 4px;
@@ -2368,9 +1848,7 @@ select.auth-form-control {
     font-size: 18px;
 }
 
-/* ===========================
-   Exhibitors Page Styles
-   =========================== */
+
 .exhibitor-card {
     background: var(--white-color);
     border-radius: 16px;
@@ -2388,25 +1866,8 @@ select.auth-form-control {
     object-fit: contain;
 }
 
-/* ===========================
-   Exhibitor Details Page Styles
-   =========================== */
-/* .exhibitor-header {
-    background: linear-gradient(180deg, #e0f2fe 0%, #fcfcfc 100%);
-    padding-bottom: 20px;
-}
 
-.header-icon-badge-white {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: #0090e7;
-} */
+
 
 .exhibitor-logo-large {
     width: 120px;
@@ -2457,11 +1918,7 @@ select.auth-form-control {
     width: 13.4px;
 }
 
-/* .info-card-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+
 
 .info-card-item {
     flex: 1;
@@ -2474,14 +1931,7 @@ select.auth-form-control {
     background: #E8E8EC;
 }
 
-/* 
-.contact-list-item {
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #344054;
-} */
+
 
 .team-avatar {
     width: 52px;
@@ -2495,43 +1945,10 @@ select.auth-form-control {
     margin-right: 12px;
 }
 
-/* ===========================
-   Transportation Results Page Styles
-   =========================== */
-/* .transport-result-card {
-    background: #f9fafb;
-    border: 1px solid #f2f4f7;
-    border-radius: 16px;
-    padding: 20px;
-}
 
-.location-icon-box {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #243c7c;
-    font-size: 20px;
-}
 
-.reserve-btn {
-    background-color: #0090e7;
-    border-color: #0090e7;
-    border-radius: 8px;
-    padding: 8px 20px;
-    font-weight: 600;
-    font-size: 14px;
-}
 
-.reserve-btn:hover {
-    background-color: #007bb5;
-    border-color: #007bb5;
-} */
 
-/* ===========================
-   About Event Page Styles
-   =========================== */
 .about-event-header {
     background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 100%);
     padding: 20px 20px 40px;
@@ -2580,75 +1997,10 @@ select.auth-form-control {
 }
 
 
-/* ===========================
-   Terms & Conditions Page Styles
-   =========================== */
-/* .terms-content {
-    padding: 0;
-}
 
-.terms-section {
-    margin-bottom: 30px;
-}
 
-.terms-heading {
-    font-size: 16px;
-    max-height: 100%;
-    object-fit: contain;
-}
 
-.download-btn {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-}
 
-.info-card-row {
-    background: white;
-    border-radius: 16px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-}
-
-.info-card-item {
-    flex: 1;
-    text-align: center;
-}
-
-.contact-list-item {
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #344054;
-}
-
-.team-avatar {
-    width: 48px;
-    height: 48px;
-    background: #243c7c;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: transform 0.2s;
-} */
-
-/* ===========================
-   Transportation Results Page Styles
-   =========================== */
 .transport-result-card {
     background: var(--primary-50);
     border: 1px solid var(--primary-100);
@@ -2663,34 +2015,13 @@ select.auth-form-control {
     gap: 4px;
 }
 
-/* 
-.location-icon-box {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #243c7c;
-    font-size: 20px;
-} */
 
-/* .reserve-btn {
-    background-color: #0090e7;
-    border-color: #0090e7;
-    border-radius: 8px;
-    padding: 8px 20px;
-    font-weight: 600;
-    font-size: 14px;
-} */
 
-/* .reserve-btn:hover {
-    background-color: #007bb5;
-    border-color: #007bb5;
-} */
 
-/* ===========================
-   About Event Page Styles
-   =========================== */
+
+
+
+
 .about-event-header {
     background: linear-gradient(180deg, #89f7fe 0%, #66a6ff 100%);
     padding: 20px 20px 40px;
@@ -2772,9 +2103,7 @@ select.auth-form-control {
     transform: rotate(45deg);
 }
 
-/* ===========================
-   Terms & Conditions Page Styles
-   =========================== */
+
 .terms-content {
     padding: 0;
 }
@@ -2797,9 +2126,7 @@ select.auth-form-control {
     margin-bottom: 12px;
 }
 
-/* ===========================
-   Event Categories Page Styles
-   =========================== */
+
 .event-categories-header {
     background: linear-gradient(180deg, #2C3E50 0%, #34495E 100%);
     padding: 20px 20px 30px;
@@ -2980,7 +2307,7 @@ select.auth-form-control {
     padding: 13px 16px;
 }
 
-/* Custom Choices.js Styling */
+
 .choices {
     margin-bottom: 0;
 }
@@ -3011,15 +2338,7 @@ select.auth-form-control {
     border-color: var(--dark-900) !important;
 }
 
-/* 
-.choices__list--dropdown {
-    border: 1px solid #d0d5dd;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    margin-top: 8px;
-    padding: 8px;
-    background: #fff;
-} */
+
 
 .choices__list--dropdown .choices__item {
     padding: 6px 12px;
@@ -3040,7 +2359,7 @@ select.auth-form-control {
     padding: 8px 12px;
 }
 
-/* Hide the default arrow if needed, or style it */
+
 .choices[data-type*="select-one"]::after {
     border-color: #344054 transparent transparent transparent;
     border-width: 6px 6px 0 6px;
@@ -3134,7 +2453,7 @@ select.auth-form-control {
     background: #7BA205;
 }
 
-/* LEFT CONTENT */
+
 .banner-content {
     flex: 0 0 55%;
     padding: 4px 6px 4px 14px;
@@ -3144,26 +2463,9 @@ select.auth-form-control {
     justify-content: center;
 }
 
-/* 
-.course-title {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.4;
-    margin-bottom: 12px;
-}
 
-.course-count {
-    font-size: 26px;
-    font-weight: 600;
-}
 
-.course-count span {
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 6px;
-} */
 
-/* RIGHT IMAGE */
 .banner-image {
     flex: 1;
     position: relative;
@@ -3350,9 +2652,7 @@ select.auth-form-control {
     margin-top: -20px;
 }
 
-/* ===========================
-   Profile Page Styles
-   =========================== */
+
 .profile-header-card {
     background: var(--white-color);
     border-radius: 20px;
@@ -3374,11 +2674,7 @@ select.auth-form-control {
     object-fit: cover;
 }
 
-/* .edit-profile-btn {
-    padding: 8px;
-    border-radius: 8px;
-    transition: background 0.3s;
-} */
+
 
 
 .profile-action-card {
@@ -3396,7 +2692,7 @@ select.auth-form-control {
 }
 
 .profile-menu-list .profile-action-card {
-    background-color: var(--white);
+    background-color: var(--white-color);
     padding: 12px 16px;
 }
 
@@ -3404,9 +2700,7 @@ select.auth-form-control {
     margin-bottom: 8px;
 }
 
-/* ===========================
-   Wavy Bottom Nav
-   =========================== */
+
 .wavy-bottom-nav {
     position: fixed;
     bottom: 0;
@@ -3481,139 +2775,93 @@ select.auth-form-control {
     height: 24px;
 }
 
-.navigation-outer {
-    background-color: transparent;
+.navigation {
     position: fixed;
-    z-index: 1000;
     bottom: 0;
     left: 0;
     width: 100%;
-}
-
-.navigation {
-    /* position: relative; */
-    /* width: 100%; */
-    height: 70px;
-    background: var(--white);
-    /* box-shadow: 16px -3px 25px 0px #0000001C; */
+    height: 93px;
+    z-index: 10000;
+    background: var(--white-color);
+    box-shadow: 5px 4px 11px 0px #0000004F;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 35px 35px 0 0;
+    z-index: 1000;
 }
 
 .navigation ul {
     display: flex;
-    width: 350px;
+    width: 100%;
     position: relative;
 }
 
 .navigation ul li {
     position: relative;
     list-style: none;
-    width: 87.5px;
-    height: 70px;
+    flex: 1;
+    height: 93px;
     z-index: 1;
 }
 
+/* link */
 .navigation ul li a {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
+    height: 100%;
     text-align: center;
-    font-weight: 500;
-    text-decoration: none;
 }
 
+/* icon */
 .navigation ul li a .icon {
-    position: relative;
-    display: block;
     line-height: 75px;
-    font-size: 1.5em;
-    text-align: center;
-    transition: 0.5s;
-    color: var(--inactive);
+    transition: 0.4s;
+    z-index: 99;
 }
 
+/* active icon lift */
 .navigation ul li.active a .icon {
-    transform: translateY(-32px);
-    color: var(--act);
+    transform: translateY(-49px);
 }
 
+.navigation ul li.active a .icon svg path {
+    stroke: var(--custom-primary);
+}
+
+/* text */
 .navigation ul li a .text {
     position: absolute;
-    color: var(--inactive);
-    font-weight: 400;
-    color: var(--dark-800);
     font-size: 12px;
-    /* letter-spacing: 0.05em; */
-    transition: 0.5s;
-    opacity: 1;
+    color: var(--dark-800);
     transform: translateY(22px);
+    transition: 0.4s;
 }
 
 .navigation ul li.active a .text {
-    opacity: 1;
-    transform: translateY(12px);
     color: var(--custom-primary);
     font-weight: 700;
 }
 
+/* INDICATOR */
 .indicator {
     position: absolute;
-    top: -50%;
-    width: 70px;
-    height: 70px;
-    background: var(--white);
+    top: -27px;
+    left: 50%;
+    width: 54px;
+    height: 54px;
+    background: var(--white-color);
     border-radius: 50%;
-    border: 6px solid var(--clr);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.indicator::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -22px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 var(--clr);
-}
-
-.indicator::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -22px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 var(--clr);
-}
-
-.navigation ul li:nth-child(1).active~.indicator {
-    transform: translateX(calc(87.5px * 0 + 8.75px));
-}
-
-.navigation ul li:nth-child(2).active~.indicator {
-    transform: translateX(calc(87.5px * 1 + 8.75px));
-}
-
-.navigation ul li:nth-child(3).active~.indicator {
-    transform: translateX(calc(87.5px * 2 + 8.75px));
-}
-
-.navigation ul li:nth-child(4).active~.indicator {
-    transform: translateX(calc(87.5px * 3 + 8.75px));
+    transform: translateX(-50%);
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, .1),
+        0 0 0 1px rgba(255, 255, 255, .5) inset;
+    transition: 0.4s cubic-bezier(.68, -0.55, .27, 1.55);
+    z-index: 0;
 }
 
 .visa-card {
