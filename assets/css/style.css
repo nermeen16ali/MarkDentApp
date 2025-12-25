@@ -2817,29 +2817,35 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px;
     width: 100%;
+    color: var(--dark-800);
     height: 100%;
     text-align: center;
 }
 
+.navigation ul li.active a {
+    color: var(--custom-primary);
+}
+
 /* icon */
-.navigation ul li a .icon {
+/* .navigation ul li a .icon {
     line-height: 75px;
     transition: 0.4s;
     z-index: 99;
-}
+} */
 
 /* active icon lift */
-.navigation ul li.active a .icon {
+/* .navigation ul li.active a .icon {
     transform: translateY(-49px);
-}
+} */
 
 .navigation ul li.active a .icon svg path {
     stroke: var(--custom-primary);
 }
 
 /* text */
-.navigation ul li a .text {
+/* .navigation ul li a .text {
     position: absolute;
     font-size: 12px;
     color: var(--dark-800);
@@ -2850,10 +2856,10 @@ button {
 .navigation ul li.active a .text {
     color: var(--custom-primary);
     font-weight: 700;
-}
+} */
 
 /* INDICATOR */
-.indicator {
+/* .indicator {
     position: absolute;
     top: -27px;
     left: 50%;
@@ -2867,7 +2873,7 @@ button {
         0 0 0 1px rgba(255, 255, 255, .5) inset;
     transition: 0.4s cubic-bezier(.68, -0.55, .27, 1.55);
     z-index: 0;
-}
+} */
 
 .visa-card {
     box-shadow: 0px 4px 10px 0px #458FFF33;
