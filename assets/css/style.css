@@ -1365,6 +1365,7 @@ button {
     display: flex;
     align-items: center;
     gap: 15px;
+    font-weight: 500;
     font-size: 14px;
     position: relative;
     color: var(--dark-900);
