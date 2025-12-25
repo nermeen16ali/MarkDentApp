@@ -514,6 +514,9 @@ button {
 .btn-dray {
     background-color: #D3D6E2;
     color: #4E4D6B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
 }
 
@@ -685,11 +688,12 @@ button {
     width: 80px;
 }
 
+/* 
 .outlined-red-btn {
     color: #A92629;
     border: 1px solid #A92629;
     font-weight: 700;
-}
+} */
 
 .speaker-name {
     font-size: 13px;
@@ -826,9 +830,9 @@ button {
 .dark-btn {
     background-color: var(--dark-950);
     color: var(--white-color);
-    padding-block: 10px;
-    font-weight: 700;
-    font-size: 14px;
+    padding-block: 9px;
+    font-weight: 800;
+    font-size: 16px;
 }
 
 
@@ -1142,7 +1146,7 @@ button {
 
 .search-container {
     position: relative;
-    margin-top: 26px;
+    margin-top: 18px;
 }
 
 .search-input {
@@ -2401,7 +2405,7 @@ button {
 }
 
 .tab-btn {
-    padding: 5px 16px;
+    padding: 5px 10px;
     flex: 1;
     font-size: 12px;
     color: var(--custom-primary);
